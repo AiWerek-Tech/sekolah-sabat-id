@@ -16,7 +16,7 @@ class Pages extends CI_Controller
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
-            'judul' => 'TENTANG KAMI',
+            'judul' => 'Tentang Kami',
             'subjudul' => '',
             'menu' => '',
             'submenu' => '',
@@ -44,7 +44,7 @@ class Pages extends CI_Controller
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
-            'judul' => 'Sekolah Sabat',
+            'judul' => 'Tentang Sekolah Sabat',
             'subjudul' => '',
             'menu' => '',
             'submenu' => '',
@@ -72,7 +72,7 @@ class Pages extends CI_Controller
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
-            'judul' => 'Sekolah Sabat',
+            'judul' => 'Ruang Lingkup dan Urutan Materi',
             'subjudul' => '',
             'menu' => '',
             'submenu' => '',
@@ -100,7 +100,7 @@ class Pages extends CI_Controller
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
-            'judul' => 'Sekolah Sabat',
+            'judul' => 'Kurikulum Gracelink',
             'subjudul' => '',
             'menu' => '',
             'submenu' => '',
@@ -130,7 +130,7 @@ class Pages extends CI_Controller
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
-            'judul' => 'Video Berita Misi',
+            'judul' => 'Berita Misi',
             'subjudul' => '',
             'menu' => '',
             'submenu' => '',

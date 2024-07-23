@@ -45,7 +45,7 @@ class Kelas extends CI_Controller
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
-            'judul' => 'Sekolah Sabat Beginner',
+            'judul' => 'Beginner',
             'subjudul' => '',
             'menu' => '',
             'submenu' => '',
@@ -145,7 +145,7 @@ class Kelas extends CI_Controller
 
         // Menyiapkan data untuk dikirimkan ke view
         $data = [
-            'judul' => 'Sekolah Sabat Bahasa Inggris',
+            'judul' => 'English Version',
             'subjudul' => '',
             'menu' => '',
             'submenu' => '',

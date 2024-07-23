@@ -1,0 +1,23 @@
+# deployment:
+#   tasks:
+#   - export DEPLOYPATH=/home/<username>/public_html  # Ganti <username> dengan username Anda
+#   - /bin/cp -r * $DEPLOYPATH  # Salin semua file dari direktori project ke public_html
+
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gmac9439/public_html/sekolahsabat.my.id/
+    # - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp .editorconfig $DEPLOYPATH
+    - /bin/cp .gitignore $DEPLOYPATH
+    - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp LICENSE $DEPLOYPATH
+    - /bin/cp license.txt $DEPLOYPATH
+    - /bin/cp readme.rst $DEPLOYPATH
+    - /bin/cp -R application $DEPLOYPATH
+    - rsync -av --exclude 'application/config/database.php' . $DEPLOYPATH #mengecualikan deploy file database
+    - rsync -av --exclude 'application/config/config.php' . $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R file-backup $DEPLOYPATH
+    - /bin/cp -R system $DEPLOYPATH

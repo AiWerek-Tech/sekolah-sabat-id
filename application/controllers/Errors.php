@@ -7,6 +7,9 @@ class Errors extends CI_Controller
     public function error_404()
     {
 
+        // Load konfigurasi sebelum memuat view
+        $this->config->load('site_config');
+
         $data = [
             'judul' => 'Error 404',
             'subjudul' => '',

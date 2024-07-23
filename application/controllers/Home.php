@@ -3,7 +3,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
-
     public function index()
     {
         // Load konfigurasi sebelum memuat view
@@ -20,6 +19,11 @@ class Home extends CI_Controller
             'page' => 'v_home', // Lokasi view content halaman utama
             'aside' => 'template/v_aside',
             'footer' => 'template/v_footer', // Lokasi view footer
+
+            'og_title' => 'Home | Sekolah Sabat ID',
+            'og_description' => 'Situs Penyedia Materi Pelajaran Sekolah Sabat',
+            'og_image' => base_url('assets/image/home_image.jpg'),
+            'og_url' => base_url('')
         ];
 
         // Memuat view 'template/v_template_home' dengan data yang telah disiapkan

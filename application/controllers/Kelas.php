@@ -26,6 +26,11 @@ class Kelas extends CI_Controller
             'page' => 'pages/v_ssaa', // Lokasi view content halaman ssa
             'aside' => 'template/v_aside',
             'footer' => 'template/v_footer', // Lokasi view footer
+
+            'og_title' => 'Sekolah Sabat Anak-anak',
+            'og_description' => 'Kumpulan Pelajaran Sekolah Sabat Anak-anak',
+            'og_image' => base_url('assets/image/gambar_slide_5.jpg'),
+            'og_url' => base_url('kelas/ss-anak-anak')
         ];
 
 

@@ -1,23 +1,25 @@
-# deployment:
-#   tasks:
-#   - export DEPLOYPATH=/home/<username>/public_html  # Ganti <username> dengan username Anda
-#   - /bin/cp -r * $DEPLOYPATH  # Salin semua file dari direktori project ke public_html
-
 ---
 deployment:
   tasks:
     - export DEPLOYPATH=/home/gmac9439/public_html/sekolahsabat.my.id/
-    # - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/cp .editorconfig $DEPLOYPATH
-    - /bin/cp .gitignore $DEPLOYPATH
-    - /bin/cp composer.json $DEPLOYPATH
-    - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp LICENSE $DEPLOYPATH
-    - /bin/cp license.txt $DEPLOYPATH
-    - /bin/cp readme.rst $DEPLOYPATH
-    - /bin/cp -R application $DEPLOYPATH
-    - rsync -av --exclude 'application/config/database.php' . $DEPLOYPATH #mengecualikan deploy file database
-    - rsync -av --exclude 'application/config/config.php' . $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R file-backup $DEPLOYPATH
-    - /bin/cp -R system $DEPLOYPATH
+
+    # Salin file individu dengan logging
+    - /bin/cp .editorconfig $DEPLOYPATH && echo "$(date) - Copied .editorconfig" >> /home/gmac9439/deploy.log
+    - /bin/cp .gitignore $DEPLOYPATH && echo "$(date) - Copied .gitignore" >> /home/gmac9439/deploy.log
+    - /bin/cp composer.json $DEPLOYPATH && echo "$(date) - Copied composer.json" >> /home/gmac9439/deploy.log
+    - /bin/cp index.php $DEPLOYPATH && echo "$(date) - Copied index.php" >> /home/gmac9439/deploy.log
+    - /bin/cp LICENSE $DEPLOYPATH && echo "$(date) - Copied LICENSE" >> /home/gmac9439/deploy.log
+    - /bin/cp license.md $DEPLOYPATH && echo "$(date) - Copied license.txt" >> /home/gmac9439/deploy.log
+    - /bin/cp readme.md $DEPLOYPATH && echo "$(date) - Copied readme.rst" >> /home/gmac9439/deploy.log
+
+    # Salin direktori dengan logging
+    - /bin/cp -R application $DEPLOYPATH && echo "$(date) - Copied directory application" >> /home/gmac9439/deploy.log
+    - /bin/cp -R assets $DEPLOYPATH && echo "$(date) - Copied directory assets" >> /home/gmac9439/deploy.log
+    - /bin/cp -R system $DEPLOYPATH && echo "$(date) - Copied directory system" >> /home/gmac9439/deploy.log
+
+    # Gunakan rsync dengan logging dan pengecualian file
+    - rsync -av --exclude 'application/config/database.php' . $DEPLOYPATH && echo "$(date) - Synced files excluding database.php" >> /home/gmac9439/deploy.log
+    - rsync -av --exclude 'application/config/config.php' . $DEPLOYPATH && echo "$(date) - Synced files excluding config.php" >> /home/gmac9439/deploy.log
+
+    # Catat kesalahan atau status akhir
+    - echo "$(date) - Deployment completed" >> /home/gmac9439/deploy.log

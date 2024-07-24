@@ -1,11 +1,6 @@
----
 deployment:
   tasks:
-    # Set path untuk deployment
     - export DEPLOYPATH=/home/gmac9439/public_html/sekolahsabat.my.id/
-
-    # Logging awal
-    - echo "$(date) - Starting deployment" > /home/gmac9439/deploy.log
 
     # Salin file individu dengan logging
     - /bin/cp .editorconfig $DEPLOYPATH && echo "$(date) - Copied .editorconfig" >> /home/gmac9439/deploy.log
@@ -17,11 +12,9 @@ deployment:
     - /bin/cp readme.md $DEPLOYPATH && echo "$(date) - Copied readme.md" >> /home/gmac9439/deploy.log
 
     # Sinkronisasi direktori menggunakan rsync, mengecualikan file konfigurasi sensitif
-    - rsync -av --exclude 'application/config/database.php' --exclude 'application/config/config.php' . $DEPLOYPATH && echo "$(date) - Synced files excluding database.php and config.php" >> /home/gmac9439/deploy.log
+    - rsync -av --exclude 'application/config/database.php' --exclude 'application/config/config.php' . $DEPLOYPATH >> /home/gmac9439/deploy.log 2>&1 && echo "$(date) - Synced files excluding database.php and config.php" >> /home/gmac9439/deploy.log
 
     # Salin file konfigurasi ke folder yang tepat di server jika diperlukan
-    # Anda bisa menyalin file konfigurasi secara eksplisit jika ada folder konfigurasi yang berbeda
-    # Misalnya:
     - /bin/cp application/config/database.php $DEPLOYPATH/application/config/ && echo "$(date) - Copied database.php to config folder" >> /home/gmac9439/deploy.log
     - /bin/cp application/config/config.php $DEPLOYPATH/application/config/ && echo "$(date) - Copied config.php to config folder" >> /home/gmac9439/deploy.log
 

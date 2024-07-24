@@ -11,15 +11,12 @@ deployment:
     - /bin/cp license.md $DEPLOYPATH && echo "$(date) - Copied license.md" >> /home/gmac9439/deploy.log
     - /bin/cp readme.md $DEPLOYPATH && echo "$(date) - Copied readme.md" >> /home/gmac9439/deploy.log
 
-    # Salin direktori menggunakan cp, tanpa file konfigurasi sensitif
-    # Salin direktori 'application' kecuali file konfigurasi sensitif
-    - /bin/cp -R application $DEPLOYPATH && echo "$(date) - Copied directory application" >> /home/gmac9439/deploy.log
-    - /bin/cp -R assets $DEPLOYPATH && echo "$(date) - Copied directory assets" >> /home/gmac9439/deploy.log
-    - /bin/cp -R system $DEPLOYPATH && echo "$(date) - Copied directory system" >> /home/gmac9439/deploy.log
+    # Salin semua file dan folder lain kecuali file konfigurasi sensitif
+    - /bin/cp -R . $DEPLOYPATH && echo "$(date) - Copied all files and directories" >> /home/gmac9439/deploy.log
 
-    # Salin file konfigurasi ke folder yang tepat di server jika diperlukan
-    - /bin/cp application/config/database.php $DEPLOYPATH/application/config/ && echo "$(date) - Copied database.php to config folder" >> /home/gmac9439/deploy.log
-    - /bin/cp application/config/config.php $DEPLOYPATH/application/config/ && echo "$(date) - Copied config.php to config folder" >> /home/gmac9439/deploy.log
+    # Hapus file konfigurasi sensitif yang mungkin ter-copy
+    - rm -f $DEPLOYPATH/application/config/database.php && echo "$(date) - Removed database.php from deployment" >> /home/gmac9439/deploy.log
+    - rm -f $DEPLOYPATH/application/config/config.php && echo "$(date) - Removed config.php from deployment" >> /home/gmac9439/deploy.log
 
     # Catat kesalahan atau status akhir
     - echo "$(date) - Deployment completed" >> /home/gmac9439/deploy.log

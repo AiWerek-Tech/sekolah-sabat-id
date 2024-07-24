@@ -23,9 +23,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/sekolahsabat.my.id/';
+// $config['base_url'] = 'http://localhost/sekolahsabat.my.id/';
 // $config['base_url'] = 'http://192.168.10.252/sekolahsabat-ci/';
 
+// Base URL default (untuk hosting)
+$config['base_url'] = 'https://sekolahsabat.my.id/';
+
+// Override base URL jika dalam lingkungan lokal
+if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'localhost') {
+    $config['base_url'] = 'http://localhost/sekolahsabat.my.id/';
+}
 /*
 |--------------------------------------------------------------------------
 | Index File

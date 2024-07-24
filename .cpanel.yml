@@ -9,17 +9,17 @@ deployment:
     - /bin/cp composer.json $DEPLOYPATH && echo "$(date) - Copied composer.json" >> /home/gmac9439/deploy.log
     - /bin/cp index.php $DEPLOYPATH && echo "$(date) - Copied index.php" >> /home/gmac9439/deploy.log
     - /bin/cp LICENSE $DEPLOYPATH && echo "$(date) - Copied LICENSE" >> /home/gmac9439/deploy.log
-    - /bin/cp license.md $DEPLOYPATH && echo "$(date) - Copied license.txt" >> /home/gmac9439/deploy.log
-    - /bin/cp readme.md $DEPLOYPATH && echo "$(date) - Copied readme.rst" >> /home/gmac9439/deploy.log
+    - /bin/cp license.md $DEPLOYPATH && echo "$(date) - Copied license.md" >> /home/gmac9439/deploy.log
+    - /bin/cp readme.md $DEPLOYPATH && echo "$(date) - Copied readme.md" >> /home/gmac9439/deploy.log
 
-    # Salin direktori dengan logging
-    - /bin/cp -R application $DEPLOYPATH && echo "$(date) - Copied directory application" >> /home/gmac9439/deploy.log
-    - /bin/cp -R assets $DEPLOYPATH && echo "$(date) - Copied directory assets" >> /home/gmac9439/deploy.log
-    - /bin/cp -R system $DEPLOYPATH && echo "$(date) - Copied directory system" >> /home/gmac9439/deploy.log
+    # Sinkronisasi direktori menggunakan rsync, mengecualikan file konfigurasi sensitif
+    - rsync -av --exclude 'application/config/database.php' --exclude 'application/config/config.php' . $DEPLOYPATH && echo "$(date) - Synced files excluding database.php and config.php" >> /home/gmac9439/deploy.log
 
-    # Gunakan rsync dengan logging dan pengecualian file
-    - rsync -av --exclude 'application/config/database.php' . $DEPLOYPATH && echo "$(date) - Synced files excluding database.php" >> /home/gmac9439/deploy.log
-    - rsync -av --exclude 'application/config/config.php' . $DEPLOYPATH && echo "$(date) - Synced files excluding config.php" >> /home/gmac9439/deploy.log
+    # Salin file konfigurasi ke folder yang tepat di server jika diperlukan
+    # Anda bisa menyalin file konfigurasi secara eksplisit jika ada folder konfigurasi yang berbeda
+    # Misalnya:
+    - /bin/cp application/config/database.php $DEPLOYPATH/application/config/ && echo "$(date) - Copied database.php to config folder" >> /home/gmac9439/deploy.log
+    - /bin/cp application/config/config.php $DEPLOYPATH/application/config/ && echo "$(date) - Copied config.php to config folder" >> /home/gmac9439/deploy.log
 
     # Catat kesalahan atau status akhir
     - echo "$(date) - Deployment completed" >> /home/gmac9439/deploy.log

@@ -2,18 +2,18 @@
   <style type="text/css">
     .header-swath--with-image {
       background-size: 100% auto;
-      background-image: url(<?= base_url('assets') ?>/image/adult-study.png);
+      background-image: url(<?= base_url('assets') ?>/image/adult-study.webp);
     }
 
     @media (min-width: 900px) {
       .header-swath--with-image {
-        background-image: url(<?= base_url('assets') ?>/image/adult-study.png);
+        background-image: url(<?= base_url('assets') ?>/image/adult-study.webp);
       }
     }
 
     @media (min-width: 1100px) {
       .header-swath--with-image {
-        background-image: url(<?= base_url('assets') ?>/image/adult-study.png);
+        background-image: url(<?= base_url('assets') ?>/image/adult-study.webp);
       }
     }
 

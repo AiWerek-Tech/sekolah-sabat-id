@@ -22,7 +22,7 @@ class Home extends CI_Controller
 
             'og_title' => 'Home | Sekolah Sabat ID',
             'og_description' => 'Situs Penyedia Materi Pelajaran Sekolah Sabat',
-            'og_image' => base_url('assets/image/home_image.jpg'),
+            'og_image' => base_url('assets/image/home_image.webp'),
             'og_url' => base_url('')
         ];
 

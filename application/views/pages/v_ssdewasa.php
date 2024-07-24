@@ -8,12 +8,12 @@
         <div class="carousel__item rel">
           <picture class="picture">
             <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" media="(min-width: 1300px)">
-            <source srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" media="(min-width: 900px)">
-            <source srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" media="(min-width: 700px)">
-            <source srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" media="(min-width: 500px)">
+            <source srcset="<?= base_url('assets/image/pemuda-dewasa.webp') ?>" media="(min-width: 1300px)">
+            <source srcset="<?= base_url('assets/image/pemuda-dewasa.webp') ?>" media="(min-width: 900px)">
+            <source srcset="<?= base_url('assets/image/pemuda-dewasa.webp') ?>" media="(min-width: 700px)">
+            <source srcset="<?= base_url('assets/image/pemuda-dewasa.webp') ?>" media="(min-width: 500px)">
             <!--[if IE 9]></video><![endif]-->
-            <img itemprop="image" srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" loading="lazy"
+            <img itemprop="image" srcset="<?= base_url('assets/image/pemuda-dewasa.webp') ?>" loading="lazy"
               alt="Alt Text">
           </picture>
           <div class="carousel__item-text__wrap">
@@ -41,12 +41,12 @@
         <div class="carousel__item rel">
           <picture class="picture">
             <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" media="(min-width: 1300px)">
-            <source srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" media="(min-width: 900px)">
-            <source srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" media="(min-width: 700px)">
-            <source srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" media="(min-width: 500px)">
+            <source srcset="<?= base_url('assets/image/ss-dewasa.webp') ?>" media="(min-width: 1300px)">
+            <source srcset="<?= base_url('assets/image/ss-dewasa.webp') ?>" media="(min-width: 900px)">
+            <source srcset="<?= base_url('assets/image/ss-dewasa.webp') ?>" media="(min-width: 700px)">
+            <source srcset="<?= base_url('assets/image/ss-dewasa.webp') ?>" media="(min-width: 500px)">
             <!--[if IE 9]></video><![endif]-->
-            <img itemprop="image" srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" loading="lazy" alt="Alt Text">
+            <img itemprop="image" srcset="<?= base_url('assets/image/ss-dewasa.webp') ?>" loading="lazy" alt="Alt Text">
           </picture>
           <div class="carousel__item-text__wrap">
             <div class="layout-container">
@@ -71,12 +71,12 @@
         <div class="carousel__item rel">
           <picture class="picture">
             <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source srcset="<?= base_url('assets/image/adult-study.png') ?>" media="(min-width: 1300px)">
-            <source srcset="<?= base_url('assets/image/adult-study.png') ?>" media="(min-width: 900px)">
-            <source srcset="<?= base_url('assets/image/adult-study.png') ?>" media="(min-width: 700px)">
-            <source srcset="<?= base_url('assets/image/adult-study.png') ?>" media="(min-width: 500px)">
+            <source srcset="<?= base_url('assets/image/adult-study.webp') ?>" media="(min-width: 1300px)">
+            <source srcset="<?= base_url('assets/image/adult-study.webp') ?>" media="(min-width: 900px)">
+            <source srcset="<?= base_url('assets/image/adult-study.webp') ?>" media="(min-width: 700px)">
+            <source srcset="<?= base_url('assets/image/adult-study.webp') ?>" media="(min-width: 500px)">
             <!--[if IE 9]></video><![endif]-->
-            <img itemprop="image" srcset="<?= base_url('assets/image/adult-study.png') ?>" loading="lazy"
+            <img itemprop="image" srcset="<?= base_url('assets/image/adult-study.webp') ?>" loading="lazy"
               alt="Alt Text">
           </picture>
           <div class="carousel__item-text__wrap">
@@ -147,7 +147,7 @@
                   <a class="media-block__image-wrap block__image-wrap db" href="<?= base_url('') ?>ss-pemuda/inverse">
                     <div class=" dib">
                       <img class="media-block__image block__image"
-                        src="<?= base_url('assets') ?>/image/kelas/inverse.png" loading="lazy"
+                        src="<?= base_url('assets') ?>/image/kelas/inverse.webp" loading="lazy"
                         alt="Media Block Image Alt Left">
                     </div>
                   </a>
@@ -182,7 +182,7 @@
                   <a class="media-block__image-wrap block__image-wrap db"
                     href="<?= base_url('') ?>ss-dewasa/pedoman-pendalaman-alkitab-dewasa">
                     <div class=" dib">
-                      <img class="media-block__image block__image" src="<?= base_url('assets') ?>/image/kelas/absg.jpg"
+                      <img class="media-block__image block__image" src="<?= base_url('assets') ?>/image/kelas/absg.webp"
                         loading="lazy" alt="Media Block Image Alt Left">
                     </div>
                   </a>
@@ -216,7 +216,7 @@
                   <a class="media-block__image-wrap block__image-wrap db"
                     href="<?= base_url('') ?>ss-dewasa/ss-dewasa/english-version">
                     <div class=" dib">
-                      <img class="media-block__image block__image" src="<?= base_url('assets') ?>/image/kelas/absg.jpg"
+                      <img class="media-block__image block__image" src="<?= base_url('assets') ?>/image/kelas/absg.webp"
                         loading="lazy" alt="Media Block Image Alt Left">
                     </div>
                   </a>

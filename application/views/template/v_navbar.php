@@ -1,7 +1,7 @@
 <!-- Notif baris atas -->
 <div class="header__top-hat show-at--large bg--black pad-half align--right">
     <span class="icon icon__logo" alt="ISI LOGO TOP DISINI">
-        <img src="<?= base_url('assets') ?>/image/icon/aiwerek-ministry.png" loading="lazy">
+        <img src="<?= base_url('assets') ?>/image/icon/aiwerek-ministry.webp" loading="lazy">
     </span>
     <p class="font--secondary--xs gray--med">This is an official website of AiWerek Ministry to <a class="link--white"
             href="https://sekolahsabat.my.id/">Learn about Sabbath School Lesson</a>.</p>
@@ -22,12 +22,12 @@
     <div class="header__unify-logo-nav">
         <a href="<?= base_url('') ?>"
             class="logo__link logo__link--horiz theme--primary-background-color show-until--large ">
-            <img src="<?= base_url('assets') ?>/image/logo_horizontal.png" loading="lazy" class="logo"
+            <img src="<?= base_url('assets') ?>/image/logo_horizontal.webp" loading="lazy" class="logo"
                 style=" margin-bottom: 0.625rem !important;" alt="Sabbath School and Personal Ministries Logo" />
         </a>
         <a href="<?= base_url('') ?>"
             class="logo__link logo__link--square theme--primary-background-color show-at--large ">
-            <img src="<?= base_url('assets') ?>/image/logo_square.png" loading="lazy" class="logo"
+            <img src="<?= base_url('assets') ?>/image/logo_square.webp" loading="lazy" class="logo"
                 style=" margin-bottom: 0.625rem !important;" alt="Sabbath School and Personal Ministries Logo" />
         </a>
 

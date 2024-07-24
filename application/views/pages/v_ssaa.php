@@ -8,12 +8,12 @@
                 <div class="carousel__item rel ">
                     <picture class="picture">
                         <!--[if IE 9]><video style="display: none;"><![endif]-->
-                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" media="(min-width: 1300px)">
-                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" media="(min-width: 900px)">
-                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" media="(min-width: 700px)">
-                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" media="(min-width: 500px)">
+                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.webp" media="(min-width: 1300px)">
+                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.webp" media="(min-width: 900px)">
+                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.webp" media="(min-width: 700px)">
+                        <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.webp" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" loading="lazy"
+                        <img itemprop="image" srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.webp" loading="lazy"
                             alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
@@ -36,13 +36,14 @@
                 <div class="carousel__item rel">
                     <picture class="picture">
                         <!--[if IE 9]><video style="display: none;"><![endif]-->
-                        <source srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" media="(min-width: 1300px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" media="(min-width: 900px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" media="(min-width: 700px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" media="(min-width: 500px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_5.webp') ?>"
+                            media="(min-width: 1300px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_5.webp') ?>" media="(min-width: 900px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_5.webp') ?>" media="(min-width: 700px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_5.webp') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" loading="lazy"
-                            alt="Alt Text">
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_5.webp') ?>"
+                            loading="lazy" alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
                         <div class="layout-container">
@@ -71,13 +72,14 @@
                 <div class="carousel__item rel">
                     <picture class="picture">
                         <!--[if IE 9]><video style="display: none;"><![endif]-->
-                        <source srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" media="(min-width: 1300px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" media="(min-width: 900px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" media="(min-width: 700px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" media="(min-width: 500px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_4.webp') ?>"
+                            media="(min-width: 1300px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_4.webp') ?>" media="(min-width: 900px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_4.webp') ?>" media="(min-width: 700px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_4.webp') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" loading="lazy"
-                            alt="Alt Text">
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_4.webp') ?>"
+                            loading="lazy" alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
                         <div class="layout-container">
@@ -104,13 +106,14 @@
                 <div class="carousel__item rel">
                     <picture class="picture">
                         <!--[if IE 9]><video style="display: none;"><![endif]-->
-                        <source srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" media="(min-width: 1300px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" media="(min-width: 900px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" media="(min-width: 700px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" media="(min-width: 500px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_3.webp') ?>"
+                            media="(min-width: 1300px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_3.webp') ?>" media="(min-width: 900px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_3.webp') ?>" media="(min-width: 700px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_3.webp') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" loading="lazy"
-                            alt="Alt Text">
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_3.webp') ?>"
+                            loading="lazy" alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
                         <div class="layout-container">
@@ -137,13 +140,14 @@
                 <div class="carousel__item rel">
                     <picture class="picture">
                         <!--[if IE 9]><video style="display: none;"><![endif]-->
-                        <source srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" media="(min-width: 1300px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" media="(min-width: 900px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" media="(min-width: 700px)">
-                        <source srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" media="(min-width: 500px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_2.webp') ?>"
+                            media="(min-width: 1300px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_2.webp') ?>" media="(min-width: 900px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_2.webp') ?>" media="(min-width: 700px)">
+                        <source srcset="<?= base_url('assets/image/gambar_slide_2.webp') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" loading="lazy"
-                            alt="Alt Text">
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_2.webp') ?>"
+                            loading="lazy" alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
                         <div class="layout-container">
@@ -210,7 +214,7 @@
                                         href="<?= base_url('') ?>ssaa/beginner">
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/beginner.jpg" loading="lazy"
+                                                src="<?= base_url('assets') ?>/image/kelas/beginner.webp" loading="lazy"
                                                 media="(min-width: 1300px)" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
@@ -247,7 +251,7 @@
                                         href="<?= base_url('') ?>ssaa/kindergarten">
                                         <div class="dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/kindergarten.jpg"
+                                                src="<?= base_url('assets') ?>/image/kelas/kindergarten.webp"
                                                 loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
@@ -283,7 +287,7 @@
                                         href="<?= base_url('') ?>ssaa/primary">
                                         <div class="dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/primary.jpg" loading="lazy"
+                                                src="<?= base_url('assets') ?>/image/kelas/primary.webp" loading="lazy"
                                                 alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
@@ -319,7 +323,7 @@
                                         href="<?= base_url('') ?>ssaa/powerpoints">
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/powerpoints.jpg"
+                                                src="<?= base_url('assets') ?>/image/kelas/powerpoints.webp"
                                                 loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>

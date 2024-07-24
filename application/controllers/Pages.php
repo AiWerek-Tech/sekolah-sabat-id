@@ -28,7 +28,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Tentang Kami',
             'og_description' => 'Situs Penyedia Materi Pelajaran Sekolah Sabat',
-            'og_image' => base_url('assets/image/home_image.jpg'),
+            'og_image' => base_url('assets/image/home_image.webp'),
             'og_url' => base_url('pages/tentang-kami')
         ];
 
@@ -61,7 +61,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Tentang Sekolah Sabat',
             'og_description' => 'Sekolah Sabat adalah salah satu bagian terpenting dari hari Sabat. Ini memberi kita kesempatan untuk bersekutu, memahami misi, melakukan pelayanan masyarakat, dan yang paling utama, belajar dan berdiskusi tentang Alkitab...',
-            'og_image' => base_url('assets/image/ss-dewasa.jpg'),
+            'og_image' => base_url('assets/image/ss-dewasa.webp'),
             'og_url' => base_url('pages/pages/tentang-sekolah-sabat')
         ];
 
@@ -94,7 +94,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Ruang Lingkup dan Urutan Pelajaran',
             'og_description' => 'Ruang Lingkup dan Urutan Pelajaran Sekolah Sabat',
-            'og_image' => base_url('assets/image/adventist-map.png'),
+            'og_image' => base_url('assets/image/adventist-map.webp'),
             'og_url' => base_url('pages/ruang-lingkup-pelajaran-ss')
         ];
 
@@ -127,7 +127,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Kurikulum Gracelink',
             'og_description' => 'GraceLink adalah kurikulum 12 tahun yang terdiri dari 624 pelajaran, semuanya berlandaskan pada Kitab Suci...',
-            'og_image' => base_url('assets/image/gambar_slide_5.jpg'),
+            'og_image' => base_url('assets/image/gambar_slide_5.webp'),
             'og_url' => base_url('pages/tentang-kurikulum-gracelink')
         ];
 
@@ -162,7 +162,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Berita Misi Advent',
             'og_description' => 'Kisah Misi Advent Sedunia',
-            'og_image' => base_url('assets/image/adventist-map.jpg'),
+            'og_image' => base_url('assets/image/adventist-map.webp'),
             'og_url' => base_url('pages/berita-misi')
         ];
 
@@ -195,7 +195,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Video Berita Misi Advent',
             'og_description' => 'Video Kisah Misi Advent Sedunia',
-            'og_image' => base_url('assets/image/berita-misi/video-bm.png'),
+            'og_image' => base_url('assets/image/berita-misi/video-bm.webp'),
             'og_url' => base_url('berita-misi/video')
         ];
 
@@ -228,7 +228,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Sumber Daya',
             'og_description' => 'Sumber Daya Lainnya dari Sekolah Sabat ID',
-            'og_image' => base_url('assets/image/resource.jpg'),
+            'og_image' => base_url('assets/image/resource.webp'),
             'og_url' => base_url('pages/resources')
         ];
 
@@ -261,7 +261,7 @@ class Pages extends CI_Controller
 
             'og_title' => 'Resources Link',
             'og_description' => 'Tautan Sumber Daya merupakan kumpulan tautan atau situs sumber daya eksternal yang relevan dengan Pelajaran Sekolah Sabat Resmi milik Gereja Masehi Advent Hari Ketujuh yang menjadi sumber adopsi semua konten dalam website ini.',
-            'og_image' => base_url('assets/image/resource.jpg'),
+            'og_image' => base_url('assets/image/resource.webp'),
             'og_url' => base_url('pages/resource-links')
         ];
 

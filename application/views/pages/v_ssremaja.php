@@ -2,18 +2,18 @@
     <style type="text/css">
         .header-swath--with-image {
             background-size: 100% auto;
-            background-image: url(<?= base_url('assets') ?>/image/gambar_slide_1.jpg);
+            background-image: url(<?= base_url('assets') ?>/image/gambar_slide_1.webp);
         }
 
         @media (min-width: 900px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/gambar_slide_1.jpg);
+                background-image: url(<?= base_url('assets') ?>/image/gambar_slide_1.webp);
             }
         }
 
         @media (min-width: 1100px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/gambar_slide_1.jpg);
+                background-image: url(<?= base_url('assets') ?>/image/gambar_slide_1.webp);
             }
         }
 
@@ -186,7 +186,7 @@
                                         href="<?= base_url('') ?>ss-remaja/realtimefaith">
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/realtimefaith.jpg"
+                                                src="<?= base_url('assets') ?>/image/kelas/realtimefaith.webp"
                                                 loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
@@ -222,7 +222,7 @@
                                         href="<?= base_url('') ?>ss-remaja/cornerstone">
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/cornerstone.jpg"
+                                                src="<?= base_url('assets') ?>/image/kelas/cornerstone.webp"
                                                 loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>

@@ -17,7 +17,7 @@
 
                 <div class="footer__desc">
                     <span class="icon footer__logo">
-                        <img src="<?= base_url('assets') ?>/image/logo_square.png" loading="lazy">
+                        <img src="<?= base_url('assets') ?>/image/logo_square.webp" loading="lazy">
                     </span>
                     <p class="footer__desc-text brown--light font--secondary">Sekolah Sabat ID merupakan situs
                         Pembelajaran Sekolah Sabat digital dalam Bahasa Indonesia &bull;

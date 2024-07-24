@@ -2,24 +2,24 @@
     <style type="text/css">
         .header-swath--with-image {
             background-size: 100% auto;
-            background-image: url(<?= base_url('assets') ?>/image/berita_misi/cover-q3.png);
+            background-image: url(<?= base_url('assets') ?>/image/berita_misi/cover-q3.webp);
         }
 
         @media (min-width: 900px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/berita_misi/cover-q3.png);
+                background-image: url(<?= base_url('assets') ?>/image/berita_misi/cover-q3.webp);
             }
         }
 
         @media (min-width: 1100px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/berita_misi/cover-q3.png);
+                background-image: url(<?= base_url('assets') ?>/image/berita_misi/cover-q3.webp);
             }
         }
 
         ul.folders .trigger,
         ul.folders .ltrigger {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.svg);
+            background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.webp);
             background-position: left center;
             background-repeat: no-repeat;
             cursor: pointer;
@@ -49,7 +49,7 @@
 
         ul.folders h3.open,
         ul.folders span.open {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.svg);
+            background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.webp);
         }
 
         ul.lessons ul.drawer li a.html {
@@ -63,7 +63,7 @@
         }
 
         ul.lessons ul.drawer li a.file1 {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.svg);
+            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
             width: 15% !important;
         }
 
@@ -74,7 +74,7 @@
         }
 
         ul.lessons ul.drawer li a.presentation {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.svg);
+            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
             width: 15% !important;
         }
 
@@ -186,7 +186,7 @@
                                     href="<?= base_url('') ?>berita-misi/dewasa">
                                     <div class=" dib">
                                         <img loading="lazy" class="media-block__image block__image"
-                                            src="<?= base_url('assets') ?>/image/berita_misi/bmd.png"
+                                            src="<?= base_url('assets') ?>/image/berita_misi/bmd.webp"
                                             media="(min-width: 1300px)" alt="Media Block Image Alt Left">
                                     </div>
                                 </a>
@@ -220,7 +220,7 @@
                                     href="<?= base_url('') ?>berita-misi/anak-anak">
                                     <div class="dib">
                                         <img loading="lazy" class="media-block__image block__image"
-                                            src="<?= base_url('assets') ?>/image/berita_misi/bma.png"
+                                            src="<?= base_url('assets') ?>/image/berita_misi/bma.webp"
                                             alt="Media Block Image Alt Left">
                                     </div>
                                 </a>
@@ -255,7 +255,7 @@
                                     href="<?= base_url('') ?>berita-misi/video">
                                     <div class="dib">
                                         <img loading="lazy" class="media-block__image block__image"
-                                            src="<?= base_url('assets') ?>/image/berita_misi/video-bm.png"
+                                            src="<?= base_url('assets') ?>/image/berita_misi/video-bm.webp"
                                             alt="Media Block Image Alt Left">
                                     </div>
                                 </a>
@@ -292,7 +292,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="<?= base_url('') ?>pages/tentang-sekolah-sabat"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.svg)">
+                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
                                         Tentang Sekolah Sabat
                                     </a>
                                 </h3>

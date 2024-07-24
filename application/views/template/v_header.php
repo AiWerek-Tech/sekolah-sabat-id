@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $judul ?> | <?= $this->config->item('app_name') ?></title>
-    <link rel="icon" type="image/x-icon" href="<?= base_url('assets') ?>/image/faficon.png">
+    <link rel="icon" type="image/x-icon" href="<?= base_url('assets') ?>/image/faficon.webp">
     <base href="">
 
     <!-- Meta Tags for SEO and Open Graph -->

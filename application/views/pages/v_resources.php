@@ -2,24 +2,24 @@
     <style type="text/css">
         .header-swath--with-image {
             background-size: 100% auto;
-            background-image: url(<?= base_url('assets') ?>/image/resource.jpg);
+            background-image: url(<?= base_url('assets') ?>/image/resource.webp);
         }
 
         @media (min-width: 900px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/resource.jpg);
+                background-image: url(<?= base_url('assets') ?>/image/resource.webp);
             }
         }
 
         @media (min-width: 1100px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/resource.jpg);
+                background-image: url(<?= base_url('assets') ?>/image/resource.webp);
             }
         }
 
         ul.folders .trigger,
         ul.folders .ltrigger {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.svg);
+            background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.webp);
             background-position: left center;
             background-repeat: no-repeat;
             cursor: pointer;
@@ -49,7 +49,7 @@
 
         ul.folders h3.open,
         ul.folders span.open {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.svg);
+            background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.webp);
         }
 
         ul.lessons ul.drawer li a.html {
@@ -63,7 +63,7 @@
         }
 
         ul.lessons ul.drawer li a.file1 {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.svg);
+            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
             width: 15% !important;
         }
 
@@ -74,7 +74,7 @@
         }
 
         ul.lessons ul.drawer li a.presentation {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.svg);
+            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
             width: 15% !important;
         }
 
@@ -186,7 +186,7 @@
                                     href="<?= base_url('') ?>pages/tentang-sekolah-sabat">
                                     <div class=" dib">
                                         <img class="media-block__image block__image"
-                                            src="<?= base_url('assets') ?>/image/icon/icon-sspm.png" loading="lazy"
+                                            src="<?= base_url('assets') ?>/image/icon/icon-sspm.webp" loading="lazy"
                                             media="(min-width: 1300px)" alt="Media Block Image Alt Left">
                                     </div>
                                 </a>
@@ -294,7 +294,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="<?= base_url('') ?>pages/berita-misi"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.svg)">
+                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
                                         Berita Mission
                                     </a>
                                 </h3>

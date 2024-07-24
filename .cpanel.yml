@@ -1,7 +1,11 @@
 ---
 deployment:
   tasks:
+    # Set path untuk deployment
     - export DEPLOYPATH=/home/gmac9439/public_html/sekolahsabat.my.id/
+
+    # Logging awal
+    - echo "$(date) - Starting deployment" > /home/gmac9439/deploy.log
 
     # Salin file individu dengan logging
     - /bin/cp .editorconfig $DEPLOYPATH && echo "$(date) - Copied .editorconfig" >> /home/gmac9439/deploy.log

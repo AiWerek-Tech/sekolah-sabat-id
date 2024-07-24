@@ -11,8 +11,11 @@ deployment:
     - /bin/cp license.md $DEPLOYPATH && echo "$(date) - Copied license.md" >> /home/gmac9439/deploy.log
     - /bin/cp readme.md $DEPLOYPATH && echo "$(date) - Copied readme.md" >> /home/gmac9439/deploy.log
 
-    # Sinkronisasi direktori menggunakan rsync, mengecualikan file konfigurasi sensitif
-    - rsync -av --exclude 'application/config/database.php' --exclude 'application/config/config.php' . $DEPLOYPATH >> /home/gmac9439/deploy.log 2>&1 && echo "$(date) - Synced files excluding database.php and config.php" >> /home/gmac9439/deploy.log
+    # Salin direktori menggunakan cp, tanpa file konfigurasi sensitif
+    # Salin direktori 'application' kecuali file konfigurasi sensitif
+    - /bin/cp -R application $DEPLOYPATH && echo "$(date) - Copied directory application" >> /home/gmac9439/deploy.log
+    - /bin/cp -R assets $DEPLOYPATH && echo "$(date) - Copied directory assets" >> /home/gmac9439/deploy.log
+    - /bin/cp -R system $DEPLOYPATH && echo "$(date) - Copied directory system" >> /home/gmac9439/deploy.log
 
     # Salin file konfigurasi ke folder yang tepat di server jika diperlukan
     - /bin/cp application/config/database.php $DEPLOYPATH/application/config/ && echo "$(date) - Copied database.php to config folder" >> /home/gmac9439/deploy.log

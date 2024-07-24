@@ -185,7 +185,7 @@
                                 <a class="media-block__image-wrap block__image-wrap db"
                                     href="<?= base_url('') ?>berita-misi/dewasa">
                                     <div class=" dib">
-                                        <img class="media-block__image block__image"
+                                        <img loading="lazy" class="media-block__image block__image"
                                             src="<?= base_url('assets') ?>/image/berita_misi/bmd.png"
                                             media="(min-width: 1300px)" alt="Media Block Image Alt Left">
                                     </div>
@@ -219,7 +219,7 @@
                                 <a class="media-block__image-wrap block__image-wrap db"
                                     href="<?= base_url('') ?>berita-misi/anak-anak">
                                     <div class="dib">
-                                        <img class="media-block__image block__image"
+                                        <img loading="lazy" class="media-block__image block__image"
                                             src="<?= base_url('assets') ?>/image/berita_misi/bma.png"
                                             alt="Media Block Image Alt Left">
                                     </div>
@@ -254,7 +254,7 @@
                                 <a class="media-block__image-wrap block__image-wrap db"
                                     href="<?= base_url('') ?>berita-misi/video">
                                     <div class="dib">
-                                        <img class="media-block__image block__image"
+                                        <img loading="lazy" class="media-block__image block__image"
                                             src="<?= base_url('assets') ?>/image/berita_misi/video-bm.png"
                                             alt="Media Block Image Alt Left">
                                     </div>

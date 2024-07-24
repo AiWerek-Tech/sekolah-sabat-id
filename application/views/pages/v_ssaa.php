@@ -13,7 +13,8 @@
                         <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" media="(min-width: 700px)">
                         <source srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" alt="Alt Text">
+                        <img itemprop="image" srcset="<?= base_url('assets') ?>/image/ssaa/ssaa2.jpg" loading="lazy"
+                            alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
                         <div class="layout-container">
@@ -40,7 +41,7 @@
                         <source srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" media="(min-width: 700px)">
                         <source srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>"
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_5.jpg') ?>" loading="lazy"
                             alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
@@ -75,7 +76,7 @@
                         <source srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" media="(min-width: 700px)">
                         <source srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>"
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_4.jpg') ?>" loading="lazy"
                             alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
@@ -108,7 +109,7 @@
                         <source srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" media="(min-width: 700px)">
                         <source srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>"
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_3.jpg') ?>" loading="lazy"
                             alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
@@ -141,7 +142,7 @@
                         <source srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" media="(min-width: 700px)">
                         <source srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" media="(min-width: 500px)">
                         <!--[if IE 9]></video><![endif]-->
-                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>"
+                        <img itemprop="image" srcset="<?= base_url('assets/image/gambar_slide_2.jpg') ?>" loading="lazy"
                             alt="Alt Text">
                     </picture>
                     <div class="carousel__item-text__wrap">
@@ -209,7 +210,7 @@
                                         href="<?= base_url('') ?>ssaa/beginner">
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/beginner.jpg"
+                                                src="<?= base_url('assets') ?>/image/kelas/beginner.jpg" loading="lazy"
                                                 media="(min-width: 1300px)" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
@@ -247,7 +248,7 @@
                                         <div class="dib">
                                             <img class="media-block__image block__image"
                                                 src="<?= base_url('assets') ?>/image/kelas/kindergarten.jpg"
-                                                alt="Media Block Image Alt Left">
+                                                loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
                                     <div class="media-block__content block__content">
@@ -282,7 +283,7 @@
                                         href="<?= base_url('') ?>ssaa/primary">
                                         <div class="dib">
                                             <img class="media-block__image block__image"
-                                                src="<?= base_url('assets') ?>/image/kelas/primary.jpg"
+                                                src="<?= base_url('assets') ?>/image/kelas/primary.jpg" loading="lazy"
                                                 alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
@@ -319,7 +320,7 @@
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
                                                 src="<?= base_url('assets') ?>/image/kelas/powerpoints.jpg"
-                                                alt="Media Block Image Alt Left">
+                                                loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
                                     <div class="media-block__content block__content ">

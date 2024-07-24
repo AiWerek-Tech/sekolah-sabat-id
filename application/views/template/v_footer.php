@@ -17,7 +17,7 @@
 
                 <div class="footer__desc">
                     <span class="icon footer__logo">
-                        <img src="<?= base_url('assets') ?>/image/logo_square.png">
+                        <img src="<?= base_url('assets') ?>/image/logo_square.png" loading="lazy">
                     </span>
                     <p class="footer__desc-text brown--light font--secondary">Sekolah Sabat ID merupakan situs
                         Pembelajaran Sekolah Sabat digital dalam Bahasa Indonesia &bull;
@@ -76,17 +76,17 @@
 </script>
 
 <!-- CDN scripts -->
-<script type="text/javascript" src="<?= base_url('assets') ?>/js/jquery/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="<?= base_url('assets') ?>/js/jquery/jquery-3.5.1.min.js" defer></script>
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" defer></script>
 <script src="https://cdn.adventist.org/alps/2/latest/js/script.min.js" type="text/javascript"></script>
 
 <!-- Local scripts -->
 <script type="text/javascript" src="<?= base_url('assets') ?>/js/slick/slick.min.js"></script>
 <script type="text/javascript" src="<?= base_url('assets') ?>/js/local.js"></script>
 
-<script src="<?= base_url('assets/js/lesson/absg/script_lesson1.js') ?>"></script>
-<script src="<?= base_url('assets/js/lesson/absg/script_lesson2.js') ?>"></script>
+<script src="<?= base_url('assets/js/lesson/absg/script_lesson1.js') ?>" defer></script>
+<script src="<?= base_url('assets/js/lesson/absg/script_lesson2.js') ?>" defer></script>
 
 
 

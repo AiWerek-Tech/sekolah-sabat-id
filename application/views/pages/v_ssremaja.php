@@ -187,7 +187,7 @@
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
                                                 src="<?= base_url('assets') ?>/image/kelas/realtimefaith.jpg"
-                                                alt="Media Block Image Alt Left">
+                                                loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
                                     <div class="media-block__content block__content ">
@@ -223,7 +223,7 @@
                                         <div class=" dib">
                                             <img class="media-block__image block__image"
                                                 src="<?= base_url('assets') ?>/image/kelas/cornerstone.jpg"
-                                                alt="Media Block Image Alt Left">
+                                                loading="lazy" alt="Media Block Image Alt Left">
                                         </div>
                                     </a>
                                     <div class="media-block__content block__content ">

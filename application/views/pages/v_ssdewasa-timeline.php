@@ -129,7 +129,7 @@
             </div>
             <p>JULI | AGUSTUS | SEPTEMBER</p>
             <div class="image-frame">
-              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/cover3.jpg" alt="Cover"
+              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/cover3.jpg" alt="Cover" loading="lazy"
                 style="border-radius: 10px;">
             </div>
             <div class="bottom">
@@ -152,7 +152,7 @@
               <span>Pelajaran 1</span>
             </div>
             <div class="image-frame">
-              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_1.png" alt="Cover"
+              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_1.png" alt="Cover" loading="lazy"
                 style="border-radius: 10px;">
             </div>
             <p>"Sesudah Yohanes ditangkap datanglah Yesus ke Galilea memberitakan Injil Allah, kata-Nya: 'Waktunya telah
@@ -181,7 +181,7 @@
               <span>Pelajaran 2</span>
             </div>
             <div class="image-frame">
-              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_2.png" alt="Cover"
+              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_2.png" alt="Cover" loading="lazy"
                 style="border-radius: 10px;">
             </div>
             <p>"Sesudah Yohanes ditangkap datanglah Yesus ke Galilea memberitakan Injil Allah, kata-Nya: 'Waktunya telah
@@ -210,7 +210,7 @@
               <span>Pelajaran 3</span>
             </div>
             <div class="image-frame">
-              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_3.png" alt="Cover"
+              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_3.png" alt="Cover" loading="lazy"
                 style="border-radius: 10px;">
             </div>
             <p>"Sesudah Yohanes ditangkap datanglah Yesus ke Galilea memberitakan Injil Allah, kata-Nya: 'Waktunya telah
@@ -239,7 +239,7 @@
               <span>Pelajaran 4</span>
             </div>
             <div class="image-frame">
-              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_4.png" alt="Cover"
+              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_4.png" alt="Cover" loading="lazy"
                 style="border-radius: 10px;">
             </div>
             <p>"Sesudah Yohanes ditangkap datanglah Yesus ke Galilea memberitakan Injil Allah, kata-Nya: 'Waktunya telah
@@ -268,7 +268,7 @@
               <span>Pelajaran 5</span>
             </div>
             <div class="image-frame">
-              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_5.png" alt="Cover"
+              <img src="<?= base_url('assets') ?>/image/ssdewasa_lesson/2024/q3/_5.png" alt="Cover" loading="lazy"
                 style="border-radius: 10px;">
             </div>
             <p>"Sesudah Yohanes ditangkap datanglah Yesus ke Galilea memberitakan Injil Allah, kata-Nya: 'Waktunya telah

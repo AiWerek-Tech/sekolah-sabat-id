@@ -13,7 +13,8 @@
             <source srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" media="(min-width: 700px)">
             <source srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" media="(min-width: 500px)">
             <!--[if IE 9]></video><![endif]-->
-            <img itemprop="image" srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" alt="Alt Text">
+            <img itemprop="image" srcset="<?= base_url('assets/image/pemuda-dewasa.jpg') ?>" loading="lazy"
+              alt="Alt Text">
           </picture>
           <div class="carousel__item-text__wrap">
             <div class="layout-container">
@@ -45,7 +46,7 @@
             <source srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" media="(min-width: 700px)">
             <source srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" media="(min-width: 500px)">
             <!--[if IE 9]></video><![endif]-->
-            <img itemprop="image" srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" alt="Alt Text">
+            <img itemprop="image" srcset="<?= base_url('assets/image/ss-dewasa.jpg') ?>" loading="lazy" alt="Alt Text">
           </picture>
           <div class="carousel__item-text__wrap">
             <div class="layout-container">
@@ -75,7 +76,8 @@
             <source srcset="<?= base_url('assets/image/adult-study.png') ?>" media="(min-width: 700px)">
             <source srcset="<?= base_url('assets/image/adult-study.png') ?>" media="(min-width: 500px)">
             <!--[if IE 9]></video><![endif]-->
-            <img itemprop="image" srcset="<?= base_url('assets/image/adult-study.png') ?>" alt="Alt Text">
+            <img itemprop="image" srcset="<?= base_url('assets/image/adult-study.png') ?>" loading="lazy"
+              alt="Alt Text">
           </picture>
           <div class="carousel__item-text__wrap">
             <div class="layout-container">
@@ -145,7 +147,8 @@
                   <a class="media-block__image-wrap block__image-wrap db" href="<?= base_url('') ?>ss-pemuda/inverse">
                     <div class=" dib">
                       <img class="media-block__image block__image"
-                        src="<?= base_url('assets') ?>/image/kelas/inverse.png" alt="Media Block Image Alt Left">
+                        src="<?= base_url('assets') ?>/image/kelas/inverse.png" loading="lazy"
+                        alt="Media Block Image Alt Left">
                     </div>
                   </a>
                   <div class="media-block__content block__content ">
@@ -180,7 +183,7 @@
                     href="<?= base_url('') ?>ss-dewasa/pedoman-pendalaman-alkitab-dewasa">
                     <div class=" dib">
                       <img class="media-block__image block__image" src="<?= base_url('assets') ?>/image/kelas/absg.jpg"
-                        alt="Media Block Image Alt Left">
+                        loading="lazy" alt="Media Block Image Alt Left">
                     </div>
                   </a>
                   <div class="media-block__content block__content ">
@@ -214,7 +217,7 @@
                     href="<?= base_url('') ?>ss-dewasa/ss-dewasa/english-version">
                     <div class=" dib">
                       <img class="media-block__image block__image" src="<?= base_url('assets') ?>/image/kelas/absg.jpg"
-                        alt="Media Block Image Alt Left">
+                        loading="lazy" alt="Media Block Image Alt Left">
                     </div>
                   </a>
                   <div class="media-block__content block__content ">

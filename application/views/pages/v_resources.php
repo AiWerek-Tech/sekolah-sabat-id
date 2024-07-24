@@ -186,7 +186,7 @@
                                     href="<?= base_url('') ?>pages/tentang-sekolah-sabat">
                                     <div class=" dib">
                                         <img class="media-block__image block__image"
-                                            src="<?= base_url('assets') ?>/image/icon/icon-sspm.png"
+                                            src="<?= base_url('assets') ?>/image/icon/icon-sspm.png" loading="lazy"
                                             media="(min-width: 1300px)" alt="Media Block Image Alt Left">
                                     </div>
                                 </a>
@@ -221,7 +221,7 @@
                                     <div class="dib theme--primary-background-color">
                                         <img class="media-block__image block__image"
                                             src="<?= base_url('assets') ?>/image/icon/logo-gracelink-square.webp"
-                                            alt="Media Block Image Alt Left">
+                                            loading="lazy" alt="Media Block Image Alt Left">
                                     </div>
                                 </a>
                                 <div class="media-block__content block__content">
@@ -256,7 +256,7 @@
                                     href="<?= base_url('') ?>pages/ruang-lingkup-pelajaran-ss">
                                     <div class="dib">
                                         <img class="media-block__image block__image"
-                                            src="<?= base_url('assets') ?>/image/icon/kurikulum.webp"
+                                            src="<?= base_url('assets') ?>/image/icon/kurikulum.webp" loading="lazy"
                                             alt="Media Block Image Alt Left">
                                     </div>
                                 </a>

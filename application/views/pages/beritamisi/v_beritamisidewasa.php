@@ -278,7 +278,9 @@
                           <p class="judul-cerita"><em><?= $titlestory5 ?></em></p>
                         </a>
                         <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a> -->
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/16GElclrhbleAc4S7e_XcuK39Px1f6biq/edit?usp=sharing&ouid=115645978607426132026&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>

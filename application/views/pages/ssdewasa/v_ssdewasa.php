@@ -484,100 +484,99 @@
                   <li>
                     <h3 class="ltrigger ">Catatan Tambahan EGW</h3>
                     <ul class="drawer lessons ">
-                      <li>
+                      <!-- <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-03"
                           target="_blank"><span>Pendahuluan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
-                      </li>
+                      </li> -->
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/01/01"
-                          target="_blank"><span>Pelajaran 01</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 01</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/02/01"
-                          target="_blank"><span>Pelajaran 02</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 02</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/03/01"
+                        <a class="html"
+                          href="https://drive.google.com/file/d/1yIqUtVTW3LrfeSeFEPqTKJwqJbFxsZ_F/view?usp=drive_link"
                           target="_blank"><span>Pelajaran 03</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1yIqUtVTW3LrfeSeFEPqTKJwqJbFxsZ_F/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <section class="audio"></section>
+                      </li>
+                      <li>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 04</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-04/02/01"
-                          target="_blank"><span>Pelajaran 04</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 05</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/05/01"
-                          target="_blank"><span>Pelajaran 05</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
-                        <section class="audio"></section>
-                      </li>
-                      <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/06/01"
+                        <a class="html"
+                          href="https://drive.google.com/file/d/1ZTGMN0b02YaSJggA6g9AE_CmbXBj-olx/view?usp=drive_link"
                           target="_blank"><span>Pelajaran 06</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1ZTGMN0b02YaSJggA6g9AE_CmbXBj-olx/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/07/01"
+                        <a class="html"
+                          href="https://drive.google.com/file/d/1uazIx5DdgSDg7fHf1R_LU6QpSrWzSnBc/view?usp=drive_link"
                           target="_blank"><span>Pelajaran 07</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1uazIx5DdgSDg7fHf1R_LU6QpSrWzSnBc/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
+                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <section class="audio"></section>
+                      </li>
+                      <li>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 08</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/08/01"
-                          target="_blank"><span>Pelajaran 08</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 09</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/09/01"
-                          target="_blank"><span>Pelajaran 09</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 10</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/10/01"
-                          target="_blank"><span>Pelajaran 10</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 11</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/11/01"
-                          target="_blank"><span>Pelajaran 11</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 12</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/12/01"
-                          target="_blank"><span>Pelajaran 12</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
-                        <section class="audio"></section>
-                      </li>
-                      <li>
-                        <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/13/01"
-                          target="_blank"><span>Pelajaran 13</span></a>
+                        <a class="html" href="" target="_blank"><span>Pelajaran 13</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
@@ -592,50 +591,62 @@
                       <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-03"
                           target="_blank"><span>Pendahuluan</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <!-- <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
-                        <section class="audio"></section>
+                        <section class="audio"></section> -->
                       </li>
                       <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/01/01"
                           target="_blank"><span>Pelajaran 01</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1VEqVXPNwNl6XlzEeYzn4E0H9jrFhycEy/edit?usp=drive_link&ouid=112681785163385046283&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/02/01"
                           target="_blank"><span>Pelajaran 02</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1i8GCjlUcQ885izM866yHWl-3xErGl43-/edit?usp=drive_link&ouid=112681785163385046283&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/03/01"
                           target="_blank"><span>Pelajaran 03</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1xZ4dI8-FZlCd3d0kYZDFORXyoGkzLjK4/edit?usp=drive_link&ouid=112681785163385046283&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-04/02/01"
                           target="_blank"><span>Pelajaran 04</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1Ao2hI1sJcg42KmUVJo8aH8b7PokS9u7z/edit?usp=drive_link&ouid=112681785163385046283&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/05/01"
                           target="_blank"><span>Pelajaran 05</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1NRL3rEUVtr_occlxOevJbVLp-4HiD_l6/edit?usp=drive_link&ouid=112681785163385046283&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="https://sabbath-school.adventech.io/in/2024-03/06/01"
                           target="_blank"><span>Pelajaran 06</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1fBunyzclxuIueQ8TkYTP1HN6k7FrP1nL/edit?usp=drive_link&ouid=112681785163385046283&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>

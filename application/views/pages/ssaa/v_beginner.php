@@ -117,9 +117,8 @@
             Beginner dan TK dapat disesuaikan untuk anak usia 3 tahun.</p>
           <h1 class="font--secondary--xl theme--secondary-text-color">Triwulan III, 2024</h1>
           <p><em>
-              Mohon maaf, saat ini kami lebih fokus dalam pengembangan website sehingga untuk sementara kami menyediakan
-              konten bahasa Indonesia (Kecuali File PPTX) yang diterjemahkan otomatis oleh Google Translate dimana
-              terjemahannya masih belum sempurna.</em>
+              Klik Judul Pelajaran untuk presentasi langsung Via Canva. Sedangkan jiika ingin download silahkan pilih
+              format PDF atau PPTX.</em>
           </p>
           <div class="lessonlist">
 
@@ -131,44 +130,89 @@
                   <li>
                     <h3 class="ltrigger open">Siswa</h3>
                     <ul class="drawer lessons open">
-                      <li>
-                        <a class="html" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
-                          target="_blank"><span>Activity</span></a>
-                        <a class="file1" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
-                          target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
-                        <section class="audio"></section>
-                      </li>
-                      <li>
+                      <!-- <li>
                         <a class="html" href="" target="_blank"><span>Pendahuluan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
-                      </li>
+                      </li> -->
                       <li>
-                        <a class="html" href="" target="_blank"><span>Pelajaran 01 - Juli</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
+                        <a class="html"
+                          href="https://www.canva.com/design/DAGN7P45U9w/BxKTlx_GvHzKcflVvZIHFQ/edit?utm_content=DAGN7P45U9w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                          target="_blank"><span>01 - Juli</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1j-B0DZxBcIAWpaZi9E33tQPAZL36yV8o/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
                         <a class="presentation1"
                           href="https://drive.google.com/uc?export=download&id=1bt41VFGwGydTfyCPMHzZFvYZvq8yZERB"
                           target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="" target="_blank"><span>Pelajaran 02 - Agustus</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="html"
+                          href="https://www.canva.com/design/DAGN7Malhzw/XXvbokdO3gMEJqCUC-21Bg/edit?utm_content=DAGN7Malhzw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                          target="_blank"><span>02 - Agustus</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1sb-rZSxLnyljkojKAIJmF6aFMvkrCqIA/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1PlkS7Hj0w4k9g9OTa6X7U5MC7DMIGwRo/edit?usp=drive_link"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="" target="_blank"><span>Pelajaran 03 - September</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <a class="html"
+                          href="https://www.canva.com/design/DAGN5tEVXpI/fSJSaM7IlC6D-ynviwi4kQ/edit?utm_content=DAGN5tEVXpI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                          target="_blank"><span>03 - September</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1JHS7UWmMbdEbOEQIXi2lTLgGXbd-PSrf/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1zocGjXrcVsQ7bMmpH4_CdCxLTZGbUKZK/edit?usp=drive_link&ouid=112681785163385046283&rtpof=true&sd=true"
+                          target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
                       </li>
                       <li>
-                        <a class="html" href="" target="_blank"><span>Ayat Hafalan</span></a>
+                        <a class="html"
+                          href="https://www.canva.com/design/DAGN7C6gllA/Ky-XtZGvkcItm8AVrIM64g/edit?utm_content=DAGN7C6gllA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                          target="_blank"><span>Ayat Hafalan</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1qQOxU0pWOf3vfIlLIlPSm1nJg-SRjHe6/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
+                        <a class="presentation1"
+                          href="https://docs.google.com/presentation/d/1uNbw3fKelXYAOUnHOoUQOXUnPHUvsZPz/edit?usp=drive_link"
+                          target="_blank"><span>PPTX</span></a>
+                        <section class="audio"></section>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="lessons">
+                  <li>
+                    <h3 class="ltrigger">Activity</h3>
+                    <ul class="drawer lessons">
+                      <li>
+                        <a class="html" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
+                          target="_blank"><span>01 - Juli</span></a>
+                        <a class="file1" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
+                          target="_blank"><span>PDF</span></a>
+                        <!-- <a class="presentation1" href="" target="_blank"><span>PPTX</span></a> -->
+                        <section class="audio"></section>
+                      </li>
+                      <li>
+                        <a class="html"
+                          href="https://drive.google.com/file/d/1xm1gPYiNZnyCz-4wwPKn48BGoxbnFNHY/view?usp=drive_link"
+                          target="_blank"><span>02 - Agustus</span></a>
+                        <a class="file1"
+                          href="https://drive.google.com/file/d/1xm1gPYiNZnyCz-4wwPKn48BGoxbnFNHY/view?usp=drive_link"
+                          target="_blank"><span>PDF</span></a>
+                        <!-- <a class="presentation1" href="" target="_blank"><span>PPTX</span></a> -->
+                        <section class="audio"></section>
+                      </li>
+                      <li>
+                        <a class="html" href="" target="_blank"><span>03 - September</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="presentation1" href="" target="_blank"><span>PPTX</span></a> -->
                         <section class="audio"></section>
                       </li>
                     </ul>
@@ -178,50 +222,42 @@
                   <li>
                     <h3 class="ltrigger ">Penuntun Guru</h3>
                     <ul class="drawer lessons ">
-                      <li>
+                      <!-- <li>
                         <a class="html" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
                           target="_blank"><span>Activity</span></a>
                         <a class="file1" href="https://drive.google.com/file/d/1sbOUoxGcABUPiNLhJSNnVRFXYvtiuVK7/view"
                           target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a> 
                         <section class="audio"></section>
-                      </li>
-                      <li>
+                      </li> -->
+                      <!-- <li>
                         <a class="html" href="" target="_blank"><span>Pendahuluan</span></a>
                         <a class="file1" href="" target="_blank"><span>PDF</span></a>
                         <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
                         <section class="audio"></section>
-                      </li>
+                      </li> -->
                       <li>
                         <a class="html" href="https://drive.google.com/file/d/1O1kIn_hWABad7eCsBzJiA1Ii8P8LSZou/view"
-                          target="_blank"><span>Pelajaran 01 - Juli</span></a>
+                          target="_blank"><span>01 - Juli</span></a>
                         <a class="file1" href="https://drive.google.com/file/d/1O1kIn_hWABad7eCsBzJiA1Ii8P8LSZou/view"
                           target="_blank"><span>PDF</span></a>
-                        <a class="presentation1"
-                          href="https://drive.google.com/uc?export=download&id=1bt41VFGwGydTfyCPMHzZFvYZvq8yZERB"
-                          target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="presentation1" href="" target="_blank"><span>PPTX</span></a> -->
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="https://drive.google.com/file/d/1MVdTwhW9guIYjxFX8xmaSDZbomAzRTou/view"
-                          target="_blank"><span>Pelajaran 02 - Agustus</span></a>
+                          target="_blank"><span>02 - Agustus</span></a>
                         <a class="file1" href="https://drive.google.com/file/d/1MVdTwhW9guIYjxFX8xmaSDZbomAzRTou/view"
                           target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="presentation1" href="" target="_blank"><span>PPTX</span></a> -->
                         <section class="audio"></section>
                       </li>
                       <li>
                         <a class="html" href="https://drive.google.com/file/d/1czcRHHBxAfFpKFyJXxXODzLzk8_ZfbLs/view"
-                          target="_blank"><span>Pelajaran 03 - September</span></a>
+                          target="_blank"><span>03 - September</span></a>
                         <a class="file1" href="https://drive.google.com/file/d/1czcRHHBxAfFpKFyJXxXODzLzk8_ZfbLs/view"
                           target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
-                        <section class="audio"></section>
-                      </li>
-                      <li>
-                        <a class="html" href="" target="_blank"><span>Ayat Hafalan</span></a>
-                        <a class="file1" href="" target="_blank"><span>PDF</span></a>
-                        <a class="presentation1" href="" target="_blank"><span>PPTX</span></a>
+                        <!-- <a class="presentation1" href="" target="_blank"><span>PPTX</span></a> -->
                         <section class="audio"></section>
                       </li>
                     </ul>

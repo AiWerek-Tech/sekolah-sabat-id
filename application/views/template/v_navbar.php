@@ -1,11 +1,60 @@
 <style>
-    .notification svg {
-        width: 24px;
-        height: 24px;
-        /* color: #000; */
+    /* MOBILE */
+    .notification-mobile {
+        display: none;
+        position: absolute;
+        right: 4rem;
+        /* Jarak dari kanan, sesuaikan sesuai kebutuhan */
+        top: 50%;
+        transform: translateY(-50%);
+        align-items: center;
     }
 
-    .notification .badge {
+    /* Menampilkan ikon notifikasi pada layar mobile */
+    @media (max-width: 43.75em) {
+        .notification-mobile {
+            display: flex;
+        }
+    }
+
+    .notification-mobile .notifbadge-mobile {
+        position: absolute;
+        top: -5px;
+        left: 2px;
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .notification-mobile svg {
+        width: 24px;
+        height: 24px;
+        stroke: #4B207F;
+        margin-right: 50px;
+        margin-left: -10px;
+        /* Oranye */
+    }
+
+    .hide-notification {
+        display: none;
+    }
+
+    /* ================DESKTOP ===================== */
+    /* Menampilkan ikon notifikasi pada layar mobile */
+    /* .notification-desktop {
+        display: flex;
+    }
+
+    @media (max-width: 43.75em) {
+        .notification-desktop {
+            display: none;
+        }
+    } */
+
+    .notification-desktop .notifbadge {
         position: absolute;
         top: -5px;
         right: -5px;
@@ -17,10 +66,10 @@
         font-weight: bold;
     }
 
-    .notification svg {
+    .notification-desktop svg {
         width: 24px;
         height: 24px;
-        stroke: purple;
+        stroke: #4B207F;
         /* Oranye */
     }
 
@@ -43,70 +92,122 @@
         align-items: center;
     }
 
+    .close-notifmodal {
+        cursor: pointer;
+    }
+
+    .notifbadge {
+        cursor: pointer;
+    }
+
     /* Modal styling */
-    .modal {
+    /* Modal Background */
+    .header__utility__inner .modal {
         display: none;
         position: fixed;
-        z-index: 1;
+        z-index: 1000;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-top: 60px;
+        overflow: hidden;
+        /* Mencegah scroll pada halaman saat modal terbuka */
+        /* display: flex; */
+        /* Menggunakan flexbox untuk menengahakan konten */
+        justify-content: center;
+        /* Menyelaraskan horizontal */
+        align-items: flex-start;
+        ;
+        /* Menyelaraskan vertikal */
     }
 
-    .modal-content {
-        background-color: #fefefe;
-        margin: 15% auto;
-        padding: 15px;
-        border: 1px solid #888;
-        width: fit-content;
-        /* Lebar modal sesuai dengan konten */
-        max-width: 90%;
-        /* Opsional: Batasan lebar modal */
+    /* Modal Content */
+    .header__utility__inner .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 0;
         border-radius: 8px;
+        width: 80%;
+        max-width: 600px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        transition: opacity 0.3s ease;
+        max-height: 80vh;
+        /* Batas tinggi maksimum modal */
+        overflow-y: auto;
+        /* Aktifkan scroll vertikal di dalam modal */
+        margin-top: 10px;
+        /* Jarak dari bagian atas */
     }
 
-    .modal-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-        padding: 10px 20px;
-        /* Kurangi padding jika perlu */
-        border-bottom: 1px solid #ddd;
+    /* Modal Header */
+    .header__utility__inner .modal-header {
+        background-color: #FFC107;
+        /* Background color for warning */
+        color: #fff;
+        /* Text color for the title */
+        padding: 15px;
+        border-radius: 8px 8px 0 0;
+        position: relative;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        /* Mengurangi jarak bawah dari header */
     }
 
-    .modal-header h2 {
-        margin: 0;
-        font-size: 18px;
-    }
-
-    .close {
-        color: #aaa;
-        font-size: 28px;
+    /* Close Button in Header */
+    .header__utility__inner .modal-header .close {
+        color: #fff;
+        font-size: 24px;
         font-weight: bold;
+        position: absolute;
+        right: 15px;
+        top: 15px;
         cursor: pointer;
+        transition: color 0.3s;
     }
 
-    .close:hover,
-    .close:focus {
-        color: black;
+    .header__utility__inner .modal-header .close:hover,
+    .header__utility__inner .modal-header .close:focus {
+        color: #eee;
+    }
+
+    /* Modal Body */
+    .header__utility__inner .modal-body {
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    /* Modal Footer (optional) */
+    .header__utility__inner .modal-footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 0 0 8px 8px;
+        text-align: right;
+    }
+
+
+    .modal .small-text {
+        font-size: 12px;
     }
 
     /* Chat container styling */
     .chat-container {
-        max-height: 400px;
+        max-height: 60vh;
+        /* Membatasi tinggi kontainer pesan */
         overflow-y: auto;
+        /* Mengaktifkan scroll jika konten terlalu panjang */
+        margin-top: 10px;
+        /* Memberikan sedikit jarak dari header modal */
     }
 
     .chat-message {
         padding: 10px;
-        margin: 10px 0;
+        margin: 10px 10px;
         border-radius: 10px;
         background-color: #f1f1f1;
-        max-width: 400px;
+        /* max-width: 400px; */
         /* Lebar konten pesan */
     }
 
@@ -165,12 +266,13 @@
 </div>
 
 <div class="header__inner">
+
     <span class="nav-toggle js-toggle" data-toggled="header" data-prefix="nav">
         <div class="nav-toggle__inner">
-            <span class="nav-toggle__segment nav-toggle__segment--1 theme--primary-background-color"></span><span
-                class="nav-toggle__segment nav-toggle__segment--2 theme--primary-background-color"></span><span
-                class="nav-toggle__segment nav-toggle__segment--3 theme--primary-background-color"></span><span
-                class="nav-toggle__segment nav-toggle__segment--4 theme--primary-background-color"></span>
+            <span class="nav-toggle__segment nav-toggle__segment--1 theme--primary-background-color"></span>
+            <span class="nav-toggle__segment nav-toggle__segment--2 theme--primary-background-color"></span>
+            <span class="nav-toggle__segment nav-toggle__segment--3 theme--primary-background-color"></span>
+            <span class="nav-toggle__segment nav-toggle__segment--4 theme--primary-background-color"></span>
         </div>
         <strong class="nav-toggle__text upper theme--primary-text-color font--secondary--s">Menu</strong>
 
@@ -181,13 +283,26 @@
         <a href="<?= base_url('') ?>"
             class="logo__link logo__link--horiz theme--primary-background-color show-until--large ">
             <img src="<?= base_url('assets') ?>/image/logo_horizontal.webp" loading="lazy" class="logo"
-                style=" margin-bottom: 0.625rem !important;" alt="Sabbath School and Personal Ministries Logo" />
+                style=" margin-bottom: 0.625rem !important;" alt="Sekolah Sabat ID logo" />
         </a>
         <a href="<?= base_url('') ?>"
             class="logo__link logo__link--square theme--primary-background-color show-at--large ">
             <img src="<?= base_url('assets') ?>/image/logo_square.webp" loading="lazy" class="logo"
-                style=" margin-bottom: 0.625rem !important;" alt="Sabbath School and Personal Ministries Logo" />
+                style=" margin-bottom: 0.625rem !important;" alt="Sekolah Sabat ID logo" />
         </a>
+
+        <!-- ICON NOTIFIKASI -->
+        <span class="notification-mobile">
+            <a href="#" id="notification-icon-mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="theme--primary-text-color feather feather-bell">
+                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+            </a>
+            <span class="notifbadge-mobile" id="notification-badge-mobile">3</span>
+        </span>
 
 
 
@@ -372,7 +487,7 @@
                             <strong>Tentang Kami</strong>
                         </a>
                     </li>
-                    <li class="notification">
+                    <li class="notification-desktop show-at--large">
                         <a href="#" id="notification-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColo" stroke-width="2" stroke-linecap="round"
@@ -381,7 +496,7 @@
                                 <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                             </svg>
                         </a>
-                        <span class="badge">1</span>
+                        <span class="notifbadge" id="notification-badge">3</span>
                     </li>
                 </ul>
             </nav>
@@ -390,20 +505,58 @@
             <div id="notification-modal" class="modal">
                 <div class="modal-content">
                     <div class="modal-header theme--primary-text-color">
-                        <h2>Info Update:</h2>
-                        <span class="close">&times;</span>
+                        <h3>📢 Info:</h3>
+                        <span class="close-notifmodal">&times;</span>
                     </div>
                     <div class="chat-container">
+                        <!-- Massage 3 -->
                         <div class="chat-message">
                             <div class="message-header">
                                 <strong>Admin</strong>
                                 <span class="separator">•</span>
-                                <span class="date">2024-08-15</span>
+                                <span class="date">15 Agustus 2024</span>
                             </div>
-                            <p class="message-content">Konten Website yang baru saja diupdate: <br>
-                                - SS Cornerstone Connections<br>
-                                - SS Real Time Faith <br>
-                                - SS Begginer
+                            <p class="message-content small-text">
+                                Baru saja diupdate: <br>
+                                <b>SS Cornerstone Connections</b><br>
+                                - Add Pelajaran 7 (Link Presentasi di Canva, Pdf & PPTX) dan Penuntun Guru<br>
+                                <b>SS Real Time Faith</b><br>
+                                - Add Pelajaran 1 - 13 (Pdf)<br>
+                                <b>SS Beginner</b><br>
+                                - Add Pelajaran Juli - September (Link Presentasi Canva, Pdf & PPTX)<br>
+                                - Add Penuntun Guru Juli - September (Pdf)<br>
+                                - Add Activity Juli - Agustus (Pdf)
+                            </p>
+
+                        </div>
+                        <!-- Massage 2 -->
+                        <div class="chat-message">
+                            <div class="message-header">
+                                <strong>Admin</strong>
+                                <span class="separator">•</span>
+                                <span class="date">1 Agustus 2024</span>
+                            </div>
+                            <p class="message-content small-text">Sudah tersedia: <br>
+                                - SS Dewasa<br>
+                                - SS Remaja<br>
+                                - SS Anak-anak<br>
+                                - SS Semua tingkat usia dalam bahasa Inggris<br>
+                                - Berita Mision
+
+                            </p>
+                        </div>
+                        <!-- Massage 1 -->
+                        <div class="chat-message">
+                            <div class="message-header">
+                                <strong>Admin</strong>
+                                <span class="separator">•</span>
+                                <span class="date">1 Juli 2024</span>
+                            </div>
+                            <p class="message-content small-text">Shalom, Puji Tuhan...
+                                Akhirnya hari ini Website <b>SEKOLAH SABAT ID</b> resmi dirilis untuk publik.
+                                Selengkapnya tentang website ini, bisa baca <a
+                                    href="<?= base_url('pages/tentang-kami') ?>"><em>Tentang Kami.</em></a>
+                                Semoga Bermanfaat 🙏😇
                             </p>
                         </div>
                         <!-- Tambahkan pesan lainnya di sini -->
@@ -431,32 +584,3 @@
 <!-- end header__inner -->
 </header>
 <!-- END HEADER -->
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("notification-modal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("notification-icon");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-</script>

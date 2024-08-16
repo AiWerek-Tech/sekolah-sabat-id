@@ -38,7 +38,7 @@
 
             <div class="footer__legal-links font--secondary--xs">
                 <p class="footer__copyright font--secondary--xs brown--light no-space--btm">Presented With 💗 By<a
-                        class="hover link--brown-light" href="https://www.facebook.com/aiwerekministry" target="_blank">
+                        class="hover link--brown-light" href="https://linktr.ee/aiwerekministry" target="_blank">
                         AiWerek Ministry</a></p>
 
                 <!--  <a class="hover link--brown-light space-half--right" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a>
@@ -115,6 +115,46 @@
             }
         });
     }
+</script>
+
+<!-- SCRIPT UNTUK MODAL notification -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the modal
+        var modal = document.getElementById("notification-modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("notification-icon");
+        var badge = document.getElementById("notification-badge");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-notifmodal")[0];
+
+        // Check if elements exist before adding event listeners
+        if (modal && btn && span && badge) {
+            // When the user clicks the button or badge, open the modal
+            btn.onclick = function () {
+                modal.style.display = "flex";
+            }
+
+            badge.onclick = function () {
+                modal.style.display = "flex";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    });
+
 </script>
 
 

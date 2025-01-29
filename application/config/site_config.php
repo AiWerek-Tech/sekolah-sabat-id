@@ -13,3 +13,8 @@ $config['develop_number'] = '082238165964';
 $config['address'] = 'Jl. Wamena - Kurima';
 $config['region'] = 'Papua Pegunungan';
 $config['country'] = 'Indonesia';
+
+//BERITA MISI CONFIG
+$config['app_name_beritamisi'] = 'Berita Misi Advent ID';
+$config['app_name_bma'] = 'Berita Misi Anak';
+$config['app_name_bmd'] = 'Berita Misi Dewasa';

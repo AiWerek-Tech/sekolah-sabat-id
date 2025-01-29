@@ -1,0 +1,58 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class BeritaMisiAnak_model extends CI_Model {
+    public function __construct() {
+        parent::__construct();
+    }
+
+    // Method untuk mendapatkan semua berita misi anak berdasarkan triwulan
+    public function getAllBerita($triwulan_id) {
+        // Query untuk mendapatkan data berita misi anak berdasarkan triwulan
+        $this->db->select('berita_misi_anak.*, hari_sabat.tanggal AS tanggal_sabat');
+        $this->db->from('berita_misi_anak');
+        $this->db->join('hari_sabat', 'berita_misi_anak.hari_sabat_id = hari_sabat.id');
+        $this->db->where('hari_sabat.triwulan_id', $triwulan_id);
+        $query = $this->db->get();
+        
+        // Mengembalikan hasil query sebagai array
+        return $query->result();
+    }
+
+    // Mengambil semua berita misi anak
+    public function get_all_misi_anak() {
+        $this->db->select('berita_misi_anak.*, hari_sabat.tanggal');
+        $this->db->from('berita_misi_anak');
+        $this->db->join('hari_sabat', 'berita_misi_anak.hari_sabat_id = hari_sabat.id');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
+    // Menambahkan berita misi anak
+    public function insert_misi_anak($data) {
+        return $this->db->insert('berita_misi_anak', $data);
+        // $this->db->insert('berita_misi_anak', $data);
+    }
+
+    // Mendapatkan data berita misi anak berdasarkan ID
+    public function get_misi_anak_by_id($id) {
+        $this->db->select('berita_misi_anak.*, hari_sabat.tanggal');
+        $this->db->from('berita_misi_anak');
+        $this->db->join('hari_sabat', 'berita_misi_anak.hari_sabat_id = hari_sabat.id');
+        $this->db->where('berita_misi_anak.id', $id);
+        $query = $this->db->get();
+        return $query->row_array();
+    }
+
+    // Mengupdate berita misi anak
+    public function update_misi_anak($id, $data) {
+        $this->db->where('id', $id);
+        return $this->db->update('berita_misi_anak', $data);
+    }
+
+    // Menghapus berita misi anak
+    public function delete_misi_anak($id) {
+        $this->db->where('id', $id);
+        return $this->db->delete('berita_misi_anak');
+    }
+}

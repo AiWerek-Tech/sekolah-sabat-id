@@ -33,7 +33,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |	['dbcollat'] The character collation used in communicating with the database
 |				 NOTE: For MySQL and MySQLi databases, this setting is only used
 | 				 as a backup if your server is running PHP < 5.2.3 or MySQL < 5.0.7
-|				 (and in table creation queries made with DB Forge).
+| 				 (and in table creation queries made with DB Forge).
 | 				 There is an incompatibility in PHP with mysql_real_escape_string() which
 | 				 can make your site vulnerable to SQL injection if you are using a
 | 				 multi-byte character set and are running versions lower than these.
@@ -73,24 +73,51 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-$db['default'] = array(
-	'dsn' => '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'sekolahsabat_db24_ci',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
+// Check if we're in development environment (localhost)
+if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== FALSE) {
+    // Local Database Configuration
+    $db['default'] = array(
+        'dsn'	=> '',
+        'hostname' => 'localhost:3307',  // Menambahkan port baru
+        'username' => 'root',
+        'password' => 'your_secure_password',  // Ganti dengan password yang aman
+        'database' => 'gmac9439_dbssid',  // Gunakan nama database yang sama
+        'dbdriver' => 'mysqli',
+        'dbprefix' => '',
+        'pconnect' => FALSE,
+        'db_debug' => TRUE,
+        'cache_on' => FALSE,
+        'cachedir' => '',
+        'char_set' => 'utf8',
+        'dbcollat' => 'utf8_general_ci',
+        'swap_pre' => '',
+        'encrypt' => FALSE,
+        'compress' => FALSE,
+        'stricton' => FALSE,
+        'failover' => array(),
+        'save_queries' => TRUE
+    );
+} else {
+    // Production/Hosting Database Configuration
+    $db['default'] = array(
+        'dsn'	=> '',
+        'hostname' => '203.175.9.124',
+        'username' => 'gmac9439_adminssid',
+        'password' => 'your_secure_password',  // Ganti dengan password yang aman
+        'database' => 'gmac9439_dbssid',
+        'dbdriver' => 'mysqli',
+        'dbprefix' => '',
+        'pconnect' => FALSE,
+        'db_debug' => FALSE,  // Aktifkan debug hanya di localhost
+        'cache_on' => FALSE,
+        'cachedir' => '',
+        'char_set' => 'utf8',
+        'dbcollat' => 'utf8_general_ci',
+        'swap_pre' => '',
+        'encrypt' => FALSE,
+        'compress' => FALSE,
+        'stricton' => FALSE,
+        'failover' => array(),
+        'save_queries' => FALSE  // Disable query saving di production
+    );
+}

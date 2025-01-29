@@ -38,7 +38,7 @@
 
             <div class="footer__legal-links font--secondary--xs">
                 <p class="footer__copyright font--secondary--xs brown--light no-space--btm">Presented With 💗 By<a
-                        class="hover link--brown-light" href="https://www.facebook.com/aiwerekministry" target="_blank">
+                        class="hover link--brown-light" href="https://linktr.ee/aiwerekministry" target="_blank">
                         AiWerek Ministry</a></p>
 
                 <!--  <a class="hover link--brown-light space-half--right" href="https://www.adventist.org/en/copyright/trademark-and-logo-usage/">Trademark and Logo Usage</a>
@@ -115,6 +115,60 @@
             }
         });
     }
+</script>
+
+<!-- SCRIPT UNTUK MODAL notification -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the modal
+        var modal = document.getElementById("notification-modal");
+
+        // Get the buttons and badges
+        var desktopNotificationBtn = document.getElementById("notification-icon");
+        var desktopNotificationBadge = document.getElementById("notification-badge");
+        var mobileNotificationBtn = document.getElementById("notification-icon-mobile");
+        var mobileNotificationBadge = document.getElementById("notification-badge-mobile");
+
+        // Get the <span> element that closes the modal
+        var closeBtn = document.getElementsByClassName("close-notifmodal")[0];
+
+        // Check if elements exist before adding event listeners
+        if (modal && desktopNotificationBtn && closeBtn) {
+            // When the user clicks the desktop notification button or badge, open the modal
+            desktopNotificationBtn.addEventListener("click", function () {
+                modal.style.display = "flex";
+            });
+
+            desktopNotificationBadge.addEventListener("click", function () {
+                modal.style.display = "flex";
+            });
+
+            // Optional: Add event listeners for mobile notification elements if they exist
+            if (mobileNotificationBtn && mobileNotificationBadge) {
+                mobileNotificationBtn.addEventListener("click", function () {
+                    modal.style.display = "flex";
+                });
+
+                mobileNotificationBadge.addEventListener("click", function () {
+                    modal.style.display = "flex";
+                });
+            }
+
+            // When the user clicks on close button (x), close the modal
+            closeBtn.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.addEventListener("click", function (event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        } else {
+            console.error("Notification elements not found!"); // Handle missing elements (optional)
+        }
+    });
 </script>
 
 

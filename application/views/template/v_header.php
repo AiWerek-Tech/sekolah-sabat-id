@@ -41,7 +41,7 @@
             text-decoration: none !important;
         }
 
-        /* @font-face {
+        @font-face {
             font-family: "oswald";
             src: url("<?= base_url('assets/fonts/Oswald-VariableFont_wght.woff2'); ?>") format("woff2");
             font-weight: normal;
@@ -50,7 +50,7 @@
         }
 
         @font-face {
-            font-family: "oswald";
+            font-family: "Montserrat";
             src: url("<?= base_url('assets/fonts/Montserrat-VariableFont_wght.woff2'); ?>") format("woff2");
             font-weight: normal;
             font-style: normal;
@@ -58,7 +58,7 @@
         }
 
         @font-face {
-            font-family: "oswald";
+            font-family: "merriweather";
             src: url("<?= base_url('assets/fonts/Merriweather-Regular.woff2'); ?>") format("woff2");
             font-weight: normal;
             font-style: normal;
@@ -66,20 +66,22 @@
         }
 
         @font-face {
-            font-family: "oswald";
+            font-family: "merriweather";
             src: url("<?= base_url('assets/fonts/Merriweather-Italic.woff2'); ?>") format("woff2");
             font-weight: normal;
-            font-style: normal;
+            font-style: italic;
             font-display: swap;
         }
 
         @font-face {
             font-family: "oswald";
             src: url("<?= base_url('assets/fonts/Merriweather-Bold.woff2'); ?>") format("woff2");
-            font-weight: normal;
+            font-weight: bold;
             font-style: normal;
             font-display: swap;
-        } */
+        }
+
+        */
     </style>
 
     <!-- CDN links -->
@@ -103,7 +105,7 @@
     <!-- Font Awesome Link For Responsive Vertical Timeline  -->
     <script src="https://kit.fontawesome.com/8b7107198b.js" defer></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
 
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets') ?>/css/bootstrap.min.custom.css" defer>

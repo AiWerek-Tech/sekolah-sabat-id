@@ -23,16 +23,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+$config['base_url'] = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 // $config['base_url'] = 'http://localhost/sekolahsabat.my.id/';
-// $config['base_url'] = 'http://192.168.10.252/sekolahsabat-ci/';
-
 // Base URL default (untuk hosting)
-$config['base_url'] = 'https://sekolahsabat.my.id/';
+// $config['base_url'] = 'https://sekolahsabat.my.id/';
 
 // Override base URL jika dalam lingkungan lokal
-if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'localhost') {
-    $config['base_url'] = 'http://localhost/sekolahsabat.my.id/';
-}
+// if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'localhost') {
+//     $config['base_url'] = 'http://localhost/sekolahsabat.my.id/';
+// }
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -43,7 +42,8 @@ if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'localhost') {
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
+
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +59,7 @@ $config['index_page'] = 'index.php';
 | 'PATH_INFO'      Uses $_SERVER['PATH_INFO']
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
+|
 */
 $config['uri_protocol'] = 'REQUEST_URI';
 
@@ -73,6 +74,7 @@ $config['uri_protocol'] = 'REQUEST_URI';
 | https://codeigniter.com/userguide3/general/urls.html
 |
 | Note: This option is ignored for CLI requests.
+|
 */
 $config['url_suffix'] = '';
 
@@ -465,9 +467,9 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_regenerate' = Regenerate token on every submission
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
-$config['csrf_protection'] = FALSE;
-$config['csrf_token_name'] = 'csrf_test_name';
-$config['csrf_cookie_name'] = 'csrf_cookie_name';
+$config['csrf_protection'] = TRUE;
+$config['csrf_token_name'] = 'csrf_token';
+$config['csrf_cookie_name'] = 'csrf_cookie';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();

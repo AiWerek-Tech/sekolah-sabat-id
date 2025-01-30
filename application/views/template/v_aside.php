@@ -1,3 +1,55 @@
+<style>
+    .visitor-container {
+        width: 100%;
+        margin: 20px 0;
+        /* Margin around the container */
+    }
+
+    .visitor-row {
+        display: flex;
+        /* Uses Flexbox to align items in a row */
+        margin-bottom: 10px;
+        /* Space between rows */
+        align-items: center;
+        /* Vertically center items */
+    }
+
+    .visitor-label {
+        display: flex;
+        align-items: center;
+        /* Vertically center items */
+        min-width: 200px;
+        /* Ensure label column width */
+    }
+
+    .visitor-label span {
+        display: inline-block;
+        min-width: 150px;
+        /* Ensure space for labels and align : vertically */
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .visitor-value {
+        font-weight: bold;
+        margin-left: 10px;
+        /* Space between label and value */
+    }
+
+    @media (max-width: 600px) {
+
+        .visitor-label span,
+        .visitor-value {
+            font-size: 0.8em;
+            /* Reduce font size */
+        }
+
+        .visitor-row {
+            margin-bottom: 5px;
+            /* Reduce vertical spacing */
+        }
+    }
+</style>
 <!-- ASIDE BOX section -->
 <div class="shift-right--fluid bg--beige can-be--dark-dark">
 
@@ -41,21 +93,21 @@
                             <li class="aside-nav__list-item rel">
                                 <a href="<?= base_url('') ?>ssaa/powerpoints"
                                     class="aside-nav__link theme--primary-text-color font--primary--s">Junior
-                                    PowerPoints</a>
+                                    PowerPoints (10-12)</a>
                             </li>
                             <li class="aside-nav__list-item rel">
                                 <a href="<?= base_url('') ?>ss-remaja/real-time-faith"
                                     class="aside-nav__link theme--primary-text-color font--primary--s">RealTime
-                                    Faith</a>
+                                    Faith (13-14)</a>
                             </li>
                             <li class="aside-nav__list-item rel">
                                 <a href="<?= base_url('') ?>ss-remaja/cornerstone-connections"
                                     class="aside-nav__link theme--primary-text-color font--primary--s">Cornerstone
-                                    Connections</a>
+                                    Connections (15-17)</a>
                             </li>
                             <li class="aside-nav__list-item rel">
                                 <a href="<?= base_url('') ?>ss-dewasa/inverse"
-                                    class="aside-nav__link theme--primary-text-color font--primary--s">inVerse</a>
+                                    class="aside-nav__link theme--primary-text-color font--primary--s">inVerse (18+)</a>
                             </li>
                             <li class="aside-nav__list-item rel">
                                 <a href="<?= base_url('') ?>ss-dewasa/panduan-pendalaman-alkitab-dewasa"
@@ -116,6 +168,31 @@
                                             <a class="aside-nav__link theme--primary-text-color font--primary--s" href="https://am.adventistmission.org/mq-children" target="_blank">Berita Misi Anak-anak</a>
                                         </li> -->
                     </ul>
+                </div>
+            </div>
+            <!-- PENGUNGJUNG -->
+            <div class="pad--secondary spacing--double">
+                <div class="media-block__content block__content">
+                    <hr>
+                    <h2 class="font--tertiary--m theme--primary-text-color pad--btm pad--top">Pengunjung</h2>
+                    <div class="visitor-container">
+                        <div class="visitor-row">
+                            <div class="visitor-label">Total Pengunjung</div>
+                            <div class="visitor-value"><?php echo $visitor_data->total_visitors; ?></div>
+                        </div>
+                        <div class="visitor-row">
+                            <div class="visitor-label">Hari ini</div>
+                            <div class="visitor-value"><?php echo $visitor_data->today_visitors; ?></div>
+                        </div>
+                        <div class="visitor-row">
+                            <div class="visitor-label">Kemarin</div>
+                            <div class="visitor-value"><?php echo $visitor_data->yesterday_visitors; ?></div>
+                        </div>
+                        <div class="visitor-row">
+                            <div class="visitor-label">Sedang Online</div>
+                            <div class="visitor-value"><?php echo $visitor_data->online_visitors; ?></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- <div class="pad--secondary spacing--double">

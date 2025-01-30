@@ -23,17 +23,16 @@
                                 <div>
                                     <h2
                                         class="carousel__item-heading font--tertiary--xl theme--primary-transparent-background-color">
-                                        Sekolah Sabat Anak-anak</h2>
+                                        SS Anak-anak</h2>
                                     <br>
                                     <div
                                         class="carousel__item-dek pad-half--btm theme--primary-transparent-background-color">
-                                        <p><span class="font--primary--xs">Pedoman Pendalaman Alkitab untuk Anak-anak
+                                        <p><span class="font--primary--xs">Sekolah Sabat untuk Anak-anak
                                                 menggunakan kurikulum Gracelink hingga usia 12 tahun (Beginner,
                                                 Kindergarten, Primary & Powerpoint)</p>
                                     </div>
                                 </div>
-                                <a href="podcast" class="carousel__item-cta btn theme--secondary-background-color">Find
-                                    Out More</a>
+                                <a href="<?= base_url('ssaa/beginner') ?>" class="carousel__item-cta btn theme--secondary-background-color">Lihat Materi</a>
                             </div>
                         </div>
                     </div>
@@ -66,8 +65,7 @@
                                                 Time Faith) dan Remaja Dewasa (Cornerstone Connection)</p>
                                     </div>
                                 </div>
-                                <a href="powerpoints"
-                                    class="carousel__item-cta btn theme--secondary-background-color">Find Out More</a>
+                                <a href="<?= base_url('ss-remaja/realtimefaith') ?>" class="carousel__item-cta btn theme--secondary-background-color">Lihat Materi</a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +89,7 @@
                                 <div>
                                     <h2
                                         class="carousel__item-heading font--tertiary--xl theme--primary-transparent-background-color">
-                                        Sekolah Sabat Pemuda Dewasa
+                                        Sekolah Sabat Dewasa Muda
                                     </h2>
                                     <br>
                                     <div
@@ -101,8 +99,7 @@
                                                 mereka yang berjiwa muda</p>
                                     </div>
                                 </div>
-                                <a href="primary" class="carousel__item-cta btn theme--secondary-background-color">Find
-                                    Out More</a>
+                                <a href="<?= base_url('ss-pemuda/inverse') ?>" class="carousel__item-cta btn theme--secondary-background-color">Lihat Materi</a>
                             </div>
                         </div>
                     </div>
@@ -134,8 +131,7 @@
                                         <p>Panduan Pendalaman Alkitab Dewasa</p>
                                     </div>
                                 </div>
-                                <a href="kindergarten"
-                                    class="carousel__item-cta btn theme--secondary-background-color">Find Out More</a>
+                                <a href="<?= base_url('ss-dewasa/pedoman-pendalaman-alkitab-dewasa') ?>" class="carousel__item-cta btn theme--secondary-background-color">Lihat Materi</a>
                             </div>
                         </div>
                     </div>
@@ -167,8 +163,7 @@
                                         <p>Kisah Misi lintas Negara yang menginspirasi</p>
                                     </div>
                                 </div>
-                                <a href="beginner" class="carousel__item-cta btn theme--secondary-background-color">Find
-                                    Out More</a>
+                                <a href="<?= base_url('berita-mission') ?>" class="carousel__item-cta btn theme--secondary-background-color">Lihat Materi</a>
                             </div>
                         </div>
                     </div>
@@ -244,7 +239,7 @@
                                                 </p>
                                             </div>
                                             <p><a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ssaa/beginner">Read More</a></p>
+                                                    href="<?= base_url('') ?>ssaa/beginner">Lihat Materi</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -279,7 +274,7 @@
                                             </div>
                                             <p>
                                                 <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ssaa/kindergarten">Read More</a>
+                                                    href="<?= base_url('') ?>ssaa/kindergarten">Lihat Materi</a>
                                             </p>
                                         </div>
                                     </div>
@@ -315,7 +310,7 @@
                                             </div>
                                             <p>
                                                 <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ssaa/primary">Read More</a>
+                                                    href="<?= base_url('') ?>ssaa/primary">Lihat Materi</a>
                                             </p>
                                         </div>
                                     </div>
@@ -351,7 +346,7 @@
                                             </div>
                                             <p>
                                                 <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ssaa/powerpoints">Read More</a>
+                                                    href="<?= base_url('') ?>ssaa/powerpoints">Lihat Materi</a>
                                             </p>
                                         </div>
                                     </div>
@@ -387,7 +382,7 @@
                                             </div>
                                             <p>
                                                 <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ss-remaja/realtimefaith">Read More</a>
+                                                    href="<?= base_url('') ?>ss-remaja/realtimefaith">Lihat Materi</a>
                                             </p>
                                         </div>
                                     </div>
@@ -423,7 +418,7 @@
                                             </div>
                                             <p>
                                                 <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ss-remaja/cornerstone">Read More</a>
+                                                    href="<?= base_url('') ?>ss-remaja/cornerstone">Lihat Materi</a>
                                             </p>
                                         </div>
                                     </div>
@@ -459,7 +454,7 @@
                                             </div>
                                             <p>
                                                 <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ss-pemuda/inverse">Read More</a>
+                                                    href="<?= base_url('') ?>ss-pemuda/inverse">Lihat Materi</a>
                                             </p>
                                         </div>
                                     </div>
@@ -494,7 +489,7 @@
                                             </div>
                                             <p>
                                                 <a class="media-block__cta block__cta btn theme--secondary-background-color"
-                                                    href="<?= base_url('') ?>ss-dewasa/pedoman-pendalaman-alkitab-dewasa"">Read More</a>
+                                                    href="<?= base_url('') ?>ss-dewasa/pedoman-pendalaman-alkitab-dewasa"">Lihat Materi</a>
                                             </p>
                                         </div>
                                     </div>

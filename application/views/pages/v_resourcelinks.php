@@ -2,85 +2,18 @@
     <style type="text/css">
         .header-swath--with-image {
             background-size: 100% auto;
-            background-image: url(<?= base_url('assets') ?>/image/resource.webp);
+            background-image: url(<?= $og_image ?>);
         }
 
         @media (min-width: 900px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/resource.webp);
+                background-image: url(<?= $og_image ?>);
             }
         }
 
         @media (min-width: 1100px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/resource.webp);
-            }
-        }
-
-        ul.folders .trigger,
-        ul.folders .ltrigger {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.webp);
-            background-position: left center;
-            background-repeat: no-repeat;
-            cursor: pointer;
-        }
-
-        ul.folders .trigger {
-            display: inline-block;
-            background-size: 20px auto;
-            border-radius: 2em;
-            color: #989690;
-            cursor: pointer;
-            font-family: montserrat, helvetica, arial, sans-serif;
-            font-size: 0.7em;
-            letter-spacing: 2px;
-            margin-left: 1.7em;
-            padding: 0.5em 0.5em 0.5em 1.3rem;
-            text-transform: uppercase;
-        }
-
-        ul.folders .ltrigger {
-            padding-left: 30px;
-        }
-
-        ul.folders li.language>.trigger {
-            margin-left: 0.5em;
-        }
-
-        ul.folders h3.open,
-        ul.folders span.open {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.webp);
-        }
-
-        ul.lessons ul.drawer li a.html {
-            width: 60% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.html {
-                width: 60% !important;
-            }
-        }
-
-        ul.lessons ul.drawer li a.file1 {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
-            width: 15% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.file1 {
-                width: 15% !important;
-            }
-        }
-
-        ul.lessons ul.drawer li a.presentation {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.webp);
-            width: 15% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.presentation {
-                width: 15% !important;
+                background-image: url(<?= $og_image ?>);
             }
         }
 
@@ -188,7 +121,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.gracelink.net/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Gracelink
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -203,7 +136,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.juniorpowerpoints.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Junior PowerPoints Lessons
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -218,7 +151,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.realtimefaith.net/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         RealTime Faith Lessons
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -234,7 +167,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.cornerstoneconnections.net/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Cornerstone Connections Lessons
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -250,7 +183,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.inversebible.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         inVerse
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -266,7 +199,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.adultbiblestudyguide.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Adult Bible Stude Guide International
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -281,7 +214,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.sabbathschoolpersonalministries.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Sabbath School and Personal Ministries
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -297,7 +230,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="http://www.instepwithjesus.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         In Step With Jesus
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -326,7 +259,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://children.adventist.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         General Conference Children’s Ministries
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -341,7 +274,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.globaltmi.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Total Member Involvement
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -357,7 +290,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://alive.adventist.org/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Sabbath School Alive!
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -374,7 +307,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.aliveinjesus.info/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Alive in Jesus Sabbath School Curriculum
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -400,7 +333,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.sabbath.school/" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Sabbath.School
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -416,7 +349,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://sabbath-school.adventech.io/in" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Sekolah Sabat Adventech
                                     </a>
                                     <div class="text text--s pad-half--btm">
@@ -432,7 +365,7 @@
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="https://www.fustero.es/index_ba.php" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.webp)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Fustero
                                     </a>
                                     <div class="text text--s pad-half--btm">

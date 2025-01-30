@@ -2,85 +2,18 @@
     <style type="text/css">
         .header-swath--with-image {
             background-size: 100% auto;
-            background-image: url(<?= base_url('assets') ?>/image/children-ministry-2.webp);
+            background-image: url(<?= $og_image ?>);
         }
 
         @media (min-width: 900px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/children-ministry-2.webp);
+                background-image: url(<?= $og_image ?>);
             }
         }
 
         @media (min-width: 1100px) {
             .header-swath--with-image {
-                background-image: url(<?= base_url('assets') ?>/image/children-ministry-2.webp);
-            }
-        }
-
-        ul.folders .trigger,
-        ul.folders .ltrigger {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-plus.svg);
-            background-position: left center;
-            background-repeat: no-repeat;
-            cursor: pointer;
-        }
-
-        ul.folders .trigger {
-            display: inline-block;
-            background-size: 20px auto;
-            border-radius: 2em;
-            color: #989690;
-            cursor: pointer;
-            font-family: montserrat, helvetica, arial, sans-serif;
-            font-size: 0.7em;
-            letter-spacing: 2px;
-            margin-left: 1.7em;
-            padding: 0.5em 0.5em 0.5em 1.3rem;
-            text-transform: uppercase;
-        }
-
-        ul.folders .ltrigger {
-            padding-left: 30px;
-        }
-
-        ul.folders li.language>.trigger {
-            margin-left: 0.5em;
-        }
-
-        ul.folders h3.open,
-        ul.folders span.open {
-            background-image: url(<?= base_url('assets') ?>/image/icon/icon-minus.svg);
-        }
-
-        ul.lessons ul.drawer li a.html {
-            width: 60% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.html {
-                width: 60% !important;
-            }
-        }
-
-        ul.lessons ul.drawer li a.file1 {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.svg);
-            width: 15% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.file1 {
-                width: 15% !important;
-            }
-        }
-
-        ul.lessons ul.drawer li a.presentation {
-            background-image: url(https://www.sabbathschoolpersonalministries.org/assets/template/image/file-8.svg);
-            width: 15% !important;
-        }
-
-        @media all and (min-width: 650px) {
-            ul.lessons ul.drawer li a.presentation {
-                width: 15% !important;
+                background-image: url(<?= $og_image ?>);
             }
         }
 
@@ -382,7 +315,7 @@
 
                             <!-- <li class="folder">
 <h3 class="font--secondary--m sized theme--secondary-text-color">
-<a href="" target="_blank" style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.svg)">
+<a href="" target="_blank" style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
 Tentang Sekolah Sabat
 </a>
 </h3>
@@ -391,7 +324,7 @@ Tentang Sekolah Sabat
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="<?= base_url('') ?>pages/tentang-sekolah-sabat" target="_blank"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.svg)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Tentang Sekolah Sabat
                                     </a>
                                 </h3>
@@ -400,7 +333,7 @@ Tentang Sekolah Sabat
                             <li class="folder">
                                 <h3 class="font--secondary--m sized theme--secondary-text-color">
                                     <a href="#"
-                                        style="background-image:url(https://www.gracelink.net/assets/template/images/icon-arrow-right.svg)">
+                                        style="background-image:url(<?= base_url('assets') ?>/image/icon/icon-arrow-right.svg)">
                                         Ruang Lingkup dan Urutan Pelajaran
                                     </a>
                                 </h3>
@@ -409,7 +342,7 @@ Tentang Sekolah Sabat
                                         <h3 class="font--secondary--m sized theme--secondary-text-color">
                                             <a href="https://drive.google.com/file/d/1J9N6oc0gbLaKFJGtqTKLgipj18TiS00M/view"
                                                 target="_blank"
-                                                style="background-image:url(https://www.gracelink.net/assets/template/images/file-9.svg)">
+                                                style="background-image:url(<?= base_url('assets') ?>/image/icon/file-8.svg)">
                                                 Ruang Lingkup dan Urutan Pelajaran SS Anak-anak
                                             </a>
                                         </h3>
@@ -418,7 +351,7 @@ Tentang Sekolah Sabat
                                         <h3 class="font--secondary--m sized theme--secondary-text-color">
                                             <a href="https://drive.google.com/file/d/1J9N6oc0gbLaKFJGtqTKLgipj18TiS00M/view"
                                                 target="_blank"
-                                                style="background-image:url(https://www.gracelink.net/assets/template/images/file-9.svg)">
+                                                style="background-image:url(<?= base_url('assets') ?>/image/icon/file-8.svg)">
                                                 Ruang Lingkup dan Urutan Pelajaran SS Dewasa
                                             </a>
                                         </h3>

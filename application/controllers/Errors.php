@@ -1,30 +1,27 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Errors extends CI_Controller
-{
+class Errors extends CI_Controller {
 
-    public function error_404()
-    {
+    public function __construct() {
+        parent::__construct();
+    }
 
-        // Load konfigurasi sebelum memuat view
-        $this->config->load('site_config');
-
-        $data = [
-            'judul' => 'Error 404',
-            'subjudul' => '',
-            'menu' => '',
-            'submenu' => '',
-            'header' => 'template/v_header', // Lokasi view header
-            'navbar' => 'template/v_navbar', // Lokasi view navbar
-            'page' => 'v_error_404', // Lokasi view content halaman ssa
-            'aside' => 'template/v_aside',
-            'footer' => 'template/v_footer', // Lokasi view footer
-        ];
-
-        // Memuat view 'template/v_template_home' dengan data yang telah disiapkan
-        $this->load->view('template/v_template_home', $data);
+    public function error_404() {
         $this->output->set_status_header('404');
+        $data['title'] = '404 Page Not Found';
+        $this->load->view('v_error_404', $data);
+    }
+
+    public function error_403() {
+        $this->output->set_status_header('403');
+        $data['title'] = '403 Forbidden';
+        $this->load->view('errors/v_error_403', $data);
+    }
+
+    public function error_500() {
+        $this->output->set_status_header('500');
+        $data['title'] = '500 Internal Server Error';
+        $this->load->view('errors/v_error_500', $data);
     }
 }
-

@@ -73,12 +73,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+
 $db['default'] = array(
-	'dsn' => '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'sekolahsabat_db24_ci',
+	'dsn'	=> '',
+	'hostname' => '203.175.9.124',
+	'username' => 'gmac9439_adminssid',
+	'password' => '~A5Juo5C_EMn',
+	'database' => 'gmac9439_dbssid',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -94,3 +95,4 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+

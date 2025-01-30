@@ -7,6 +7,10 @@ class Auth extends CI_Controller {
     }
 
     public function login() {
+        // Jika user sudah login, redirect ke dashboard
+        if ($this->session->userdata('user_id')) {
+            redirect('admin/dashboard');
+        }
 
         $this->config->load('site_config');
         // Load helper url
@@ -28,6 +32,11 @@ class Auth extends CI_Controller {
     }
 
     public function process_login() {
+        // Jika user sudah login, redirect ke dashboard
+        if ($this->session->userdata('user_id')) {
+            redirect('admin/dashboard');
+        }
+
         $username = $this->input->post('username');
         $password = $this->input->post('password');
 
@@ -38,12 +47,27 @@ class Auth extends CI_Controller {
             return;
         }
 
+        // Validasi panjang username dan password
+        if (strlen($username) < 3 || strlen($password) < 6) {
+            $this->session->set_flashdata('error', 'Username minimal 3 karakter dan password minimal 6 karakter.');
+            redirect('admin/login');
+            return;
+        }
+
         $user = $this->User_model->get_user_by_username($username);
 
         if ($user && password_verify($password, $user['password'])) {
-            $this->session->set_userdata('user_id', $user['id']);
-            $role = $this->User_model->get_user_role($user['id']);
-            $this->session->set_userdata('role', $role);
+            // Set session data
+            $session_data = [
+                'user_id' => $user['id'],
+                'username' => $user['username'],
+                'role' => $this->User_model->get_user_role($user['id']),
+                'last_login' => date('Y-m-d H:i:s')
+            ];
+            $this->session->set_userdata($session_data);
+
+            // Update last login time
+            $this->User_model->update_last_login($user['id']);
 
             // Pesan sukses
             $this->session->set_flashdata('success', 'Login berhasil');
@@ -56,8 +80,11 @@ class Auth extends CI_Controller {
     }
 
     public function logout() {
-        $this->session->unset_userdata('user_id');
-        $this->session->unset_userdata('role');
+        // Clear all session data
+        $this->session->sess_destroy();
+        
+        // Redirect ke halaman login dengan pesan
+        $this->session->set_flashdata('success', 'Anda telah berhasil logout');
         redirect('admin/login');
     }
 }

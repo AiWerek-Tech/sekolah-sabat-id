@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /sekolahsabat.my.id/
+    RewriteBase /
 
     # Redirect all requests to the index.php front controller
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -9,10 +9,10 @@
 </IfModule>
 
 # Set the default handler for 404 errors to the index.php front controller
-ErrorDocument 404 /sekolahsabat.my.id/index.php
+ErrorDocument 404 /index.php
 
-# Enable error display for local development
-php_flag display_errors on
+#Matikan semua error agar tidak tampil
+php_flag display_errors off
 
 # Disable directory browsing
 Options -Indexes

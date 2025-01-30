@@ -74,14 +74,14 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 // Check if we're in development environment (localhost)
-if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== FALSE) {
+if (isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false || strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false)) {
     // Local Database Configuration
     $db['default'] = array(
         'dsn'	=> '',
-        'hostname' => 'localhost:3307',  // Menambahkan port baru
+        'hostname' => 'localhost',
         'username' => 'root',
-        'password' => 'your_secure_password',  // Ganti dengan password yang aman
-        'database' => 'gmac9439_dbssid',  // Gunakan nama database yang sama
+        'password' => '',
+        'database' => 'gmac9439_dbssid',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
@@ -103,12 +103,12 @@ if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== FALSE) {
         'dsn'	=> '',
         'hostname' => '203.175.9.124',
         'username' => 'gmac9439_adminssid',
-        'password' => 'your_secure_password',  // Ganti dengan password yang aman
+        'password' => '~A5Juo5C_EMn',
         'database' => 'gmac9439_dbssid',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
-        'db_debug' => FALSE,  // Aktifkan debug hanya di localhost
+        'db_debug' => FALSE,  // Disable debug di production
         'cache_on' => FALSE,
         'cachedir' => '',
         'char_set' => 'utf8',

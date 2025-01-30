@@ -53,24 +53,21 @@ $route['default_controller'] = 'home';
 $route['404_override'] = 'errors/error_404';
 $route['translate_uri_dashes'] = TRUE;  // Mengizinkan penggunaan tanda hubung dalam nama controller dan metode
 
-// Pages routes
-$route['pages/resources'] = 'pages/resources';
-$route['pages/resource-links'] = 'pages/resourcelinks';
-$route['pages/tentang-kami'] = 'pages/aboutus';
-$route['pages/tentang-kami/our-team'] = 'pages/ourteam';
-$route['pages/sitemaps'] = 'pages/sitemaps';
-$route['pages/tentang-sekolah-sabat'] = 'pages/aboutss';
-$route['pages/tentang-kurikulum-gracelink'] = 'pages/aboutgracelink';
-$route['pages/ruang-lingkup-pelajaran-ss'] = 'pages/ruanglingkupss';
+// Custom error routes
+$route['error/404'] = 'errors/error_404';
+$route['error/403'] = 'errors/error_403';
+$route['error/500'] = 'errors/error_500';
 
-// Admin routes
+// Admin Authentication Routes
 $route['admin/login'] = 'auth/login';      
 $route['admin/logout'] = 'auth/logout';      
 $route['admin/auth/process_login'] = 'auth/process_login'; 
 
+// Admin Dashboard Routes
 $route['admin/dashboard'] = 'dashboard';
 $route['admin/tahun-pelayanan'] = 'tahuntriwulan';
 
+// Hari Sabat Routes
 $route['admin/hari-sabat/(:any)'] = 'harisabat/index/$1';
 $route['admin/hari-sabat'] = 'harisabat/index';
 $route['HariSabat/add'] = 'HariSabat/add';
@@ -78,6 +75,7 @@ $route['HariSabat/delete/(:num)/(:num)'] = 'HariSabat/delete/$1/$2';
 $route['HariSabat/edit/(:num)'] = 'HariSabat/edit/$1';
 $route['HariSabat/update'] = 'HariSabat/update';
 
+// Admin Role Management Routes
 $route['admin/roles'] = 'roles';
 $route['admin/roles/update_user_role'] = 'roles';
 $route['admin/user-management'] = 'dashboard/usermanagement';
@@ -85,11 +83,13 @@ $route['admin/permission-management'] = 'dashboard/permissionmanagement';
 $route['admin/permission_management/add_permission'] = 'roles/add_permission';
 $route['admin/permission_management/update_permission'] = 'roles/update_permission';
 
+// Kelas Sekolah Sabat Routes
 $route['admin/kelas-sekolah-sabat'] = 'dashboard/kelas';
-$route['admin/kelas/add_class'] = 'dashboard/add_class'; // Rute untuk menambah kelas
-$route['admin/kelas/edit_class/(:any)'] = 'dashboard/edit_class/$1'; // Rute untuk mengedit kelas
-$route['admin/kelas/delete_class'] = 'dashboard/delete_class'; // Rute untuk menghapus kelas
+$route['admin/kelas/add_class'] = 'dashboard/add_class';
+$route['admin/kelas/edit_class/(:any)'] = 'dashboard/edit_class/$1';
+$route['admin/kelas/delete_class'] = 'dashboard/delete_class';
 
+// Berita Misi Routes
 $route['admin/berita-misi/anak-anak'] = 'BeritaMisiAnak/index';
 $route['admin/berita-misi/anak-anak/create'] = 'BeritaMisiAnak/create';
 $route['admin/berita-misi/anak-anak/store'] = 'BeritaMisiAnak/store';
@@ -97,18 +97,32 @@ $route['admin/berita-misi/anak-anak/edit/(:num)'] = 'BeritaMisiAnak/edit/$1';
 $route['admin/berita-misi/anak-anak/update/(:num)'] = 'BeritaMisiAnak/update/$1';
 $route['admin/berita-misi/anak-anak/delete/(:num)'] = 'BeritaMisiAnak/delete/$1';
 
-// Error routes
-$route['error/404'] = 'errors/error_404';
-$route['error/403'] = 'errors/error_403';
-$route['error/500'] = 'errors/error_500';
-
+// Public Pages Routes
+$route['pages/resources'] = 'pages/resources';
+$route['pages/resourcelinks'] = 'pages/resourcelinks';
+$route['pages/tentangss'] = 'pages/tentangss';
+$route['pages/tentanggracelink'] = 'pages/tentanggracelink';
+$route['pages/ruanglingkupss'] = 'pages/ruanglingkupss';
+$route['pages/ssaa'] = 'pages/ssaa';
+$route['pages/ssaa/beginner'] = 'pages/beginner';
+$route['pages/ssaa/kindergarten'] = 'pages/kindergarten';
+$route['pages/ssaa/primary'] = 'pages/primary';
+$route['pages/ssaa/powerpoints'] = 'pages/powerpoints';
+$route['pages/ssaa/activity'] = 'pages/activity';
+$route['pages/ssremaja'] = 'pages/ssremaja';
+$route['pages/ssremaja/cornerstone'] = 'pages/cornerstone';
+$route['pages/ssremaja/rtf'] = 'pages/rtf';
+$route['pages/ssdewasa'] = 'pages/ssdewasa';
+$route['pages/ssdewasa/inverse'] = 'pages/inverse';
+$route['pages/beritamisi'] = 'pages/beritamisi';
+$route['pages/beritamisi/videoberitamisi'] = 'pages/videoberitamisi';
+$route['pages/beritamisianak'] = 'pages/beritamisianak';
+$route['pages/beritamisianak/(:any)'] = 'pages/beritamisianak_detail/$1';
+$route['pages/tentangkami'] = 'pages/tentangkami';
+$route['pages/tentang-ourteam'] = 'pages/tentang_ourteam';
 
 //SS ANAK-ANAK
 $route['kelas/ss-anak-anak'] = 'kelas/ssaa';
-$route['ssaa/beginner'] = 'kelas/beginner';
-$route['ssaa/kindergarten'] = 'kelas/kindergarten';
-$route['ssaa/primary'] = 'kelas/primary';
-$route['ssaa/powerpoints'] = 'kelas/powerpoints';
 //SS REMAJA
 $route['kelas/ss-remaja'] = 'kelas/ssremaja';
 $route['ss-remaja/realtimefaith'] = 'kelas/realtimefaith';
@@ -117,9 +131,6 @@ $route['ss-remaja/cornerstone'] = 'kelas/cornerstone';
 $route['ss-remaja/tentang-cornerstone-connections'] = 'kelas/aboutcornerstone';
 //SS DEWASA
 $route['kelas/ss-dewasa'] = 'kelas/ssdewasa';
-$route['ss-dewasa/pedoman-pendalaman-alkitab-dewasa'] = 'kelas/pendalamanssdewasa';
-$route['ss-dewasa/english-version'] = 'kelas/englishversion';
-$route['ss-pemuda/inverse'] = 'kelas/inverse';
 
 //BERITA MISSION
 $route['pages/berita-misi'] = 'pages/beritamisi';

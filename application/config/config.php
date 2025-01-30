@@ -23,9 +23,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-if (isset($_SERVER['HTTP_HOST']) && strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
+if (isset($_SERVER['HTTP_HOST']) && (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false || strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false)) {
     // Local environment
-    $config['base_url'] = 'http://localhost:8080/sekolahsabat.my.id/';
+    $config['base_url'] = 'http://localhost/sekolahsabat.my.id/';
 } else {
     // Production environment
     $config['base_url'] = 'https://sekolahsabat.my.id/';
